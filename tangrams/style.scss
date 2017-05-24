@@ -1,0 +1,125 @@
+$dim: 1;
+$red: #f53f00;
+$orange: 	#ff7518;
+$purple: #592da6;
+$gold: #ffe135;
+$green: #4ed9b1;
+$blue: #2d61a6;
+$pink: #fc69b4;
+$gray: #4a5662;
+$white: #ffffff;
+$sqside: 5.6em;
+
+
+#playspace {
+  background-color: $white;
+  height: 50em;
+  width: 50em;
+}
+
+.shape{
+  opacity: 0.8;
+}
+
+#square {
+  width: $sqside; 
+  height: $sqside; 
+  background-color: $red;
+   -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+   right: 8%;
+   top: 32.6%;
+   position: absolute;
+  }
+
+#parallelo {
+	width: 8em;
+	height: 4em;
+	-webkit-transform: skew(45deg);
+	   -moz-transform: skew(45deg);
+       -ms-transform: skew(45deg);
+	       -o-transform: skew(45deg);
+	background: $orange;
+  right: 38%;
+  bottom: 75%;
+  position: absolute;
+}
+
+#lgtri {
+	width: 0;
+	height: 0;
+	border-right: 8em solid transparent;
+  border-left: 8em solid transparent;
+	border-bottom: 8em solid $blue;
+  right: 0%;
+  top: 50%;
+  position: absolute;
+
+}
+
+
+#lgtri2 {
+  @extend #lgtri;
+  border-bottom: 8em solid $green;
+    -webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+  right: 25%;
+  top: 25%;
+  position: absolute;
+}
+
+#smtri {
+	width: 0;
+	height: 0;
+	border-right: 4em solid transparent;
+  border-left: 4em  solid transparent;
+	border-bottom: 4em  solid $purple;
+   -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+  left: 61.99%;
+  top: 61.99%;
+  position: absolute;
+
+}
+
+#smtri2 {
+  @extend #smtri;
+  border-bottom: 4em solid $pink; 
+   -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    left: 24.8%;
+    top: 25.19%;
+    position: absolute;
+}
+
+#medtri {
+	width: 0;
+	height: 0;
+	border-right: $sqside solid transparent;
+  border-left: $sqside solid transparent;
+	border-bottom: $sqside solid $gold;
+    -webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+  left: 51.9%;
+  bottom: 70.5%;
+  position: absolute;
+    
+}
+
+#start {
+  width: 16em;
+  margin: 0 auto;
+  height: 16em;
+  }
+  
+ 
