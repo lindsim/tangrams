@@ -12,16 +12,16 @@ $(function() {
 
 	$(document).keydown(function(e) {
     switch(e.which) {
-        case 37: alert( xmouse );
+        case 37: alert("left");
         break;
 
-        case 38: alert( "up" );
+        case 38: alert("up");
         break;
 
-        case 39: alert( "right" );
+        case 39: alert("right");
         break;
 
-        case 40: alert( "down" );
+        case 40: alert("down");
         
         break;
 
@@ -29,8 +29,4 @@ $(function() {
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
 	});
-
-  $(".shape").click(function(){
-  	$(this).toggleClass("turn");
-  });
 });

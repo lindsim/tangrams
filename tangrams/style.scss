@@ -1,5 +1,5 @@
 $red: #f53f00;
-$orange: 	#ff7518;
+$orange: #ff7518;
 $purple: #592da6;
 $gold: #ffe135;
 $green: #4ed9b1;
@@ -120,4 +120,17 @@ $sqside: 5.656em;
   margin: 0 auto;
   height: 16em;
   }
- 
+  
+  .flip {
+    -webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+    }
+    
+  .turn {
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+    }
