@@ -1,33 +1,27 @@
 $(function() {
 
-  $("#start").position({
-    my: "center",
-    at: "center",
-    of: "#playspace"
-  });
-  
   $(".shape").draggable({
-    containment: "#playspace"
+    containment: "#playSpace"
   });
 
   var currentShape = null;
 
-  $(".shape").mouseover(function() {
+  $(".shape").click(function() {
     currentShape = $(this);
   })
 
 	$(document).keydown(function(e) {
     switch(e.which) {
-        case 37: alert("pointleft");
+        case 37: currentShape.toggleClass("pointLeft");
         break;
 
-        case 38: alert("pointUp");
+        case 38: currentShape.toggleClass("pointUp");
         break;
 
-        case 39: alert("pointRight");
+        case 39: currentShape.toggleClass("pointRight");
         break;
 
-        case 40: alert("pointDown");
+        case 40: currentShape.toggleClass("pointDown");
         break;
 
         default: return; // exit this handler for other keys

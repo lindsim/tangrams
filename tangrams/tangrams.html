@@ -1,18 +1,28 @@
-<title>Tangrams</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tangrams</title>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-<body>
-  <div id="playspace">
-    <div id="start">
-      <div id="lgtri" class="shape"></div>
-      <div id="lgtri2" class="shape"></div>
-      <div id="medtri" class="shape"></div>
-      <div id="parallelo" class="shape"></div>
-      <div id="square" class="shape"></div>
-      <div id="smtri" class="shape"></div>
-      <div id="smtri2" class="shape"></div>    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="manipulation.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="playSpace">
+      <div id="shapeTray">
+        <div id="smtri" class="shape"></div>
+        <div id="smtri2" class="shape"></div> 
+        <div id="square" class="shape"></div>
+        <div id="parallelo" class="shape"></div>
+        <div id="medtri" class="shape"></div>
+        <div id="lgtri2" class="shape"></div>
+        <div id="lgtri" class="shape"></div>
+      </div>
+      <div id="matchSpace">
+        <div id="a" class="matching"></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
+</html>
