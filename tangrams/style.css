@@ -10,7 +10,6 @@
 #matchSpace {
   display: inline-block;
   float: left;
-  border: 0.2em solid #4a5662;
   margin-left: 1em;
   height: 41.25em;
   width: 32em;
@@ -19,7 +18,6 @@
 #shapeTray {
   height: 41.25em;
   width: 16em;
-  border: 0.2em solid #4a5662;
   float: left;
 }
 
@@ -35,6 +33,7 @@
   opacity: 0.8;
   margin-bottom: 0.25em;
   margin-top: 0.25em;
+  margin-right: 0.25em;
 }
 
 
