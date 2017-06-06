@@ -114,32 +114,45 @@
   
 /* transform */
  
- .pointLeft {
-    -webkit-transform: rotate(-90deg);
-	  -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-	     -o-transform: rotate(-90deg);
-    }
-
-    
-  .pointRight {
+ .turnLeft {
     -webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
 	     -o-transform: rotate(90deg);
     }
+
+    
+  .turnRight {
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+    }
   
     .pointDown {
-    -webkit-transform: scale(1,-1);
-	  -moz-transform: scale(1,-1);
-      -ms-transform: scale(1,-1);
-	     -o-transform: scale(1, -1);
+    -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
     }
- 
-     .pointUp {
-    -webkit-transform: scale(1,1);
-	  -moz-transform: scale(1,1);
-      -ms-transform: scale(1,1);
-	     -o-transform: scale(1,1);
+
+    .pointUp {
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+	     -o-transform: rotate(0deg);
     }
     
+    .pointRight{
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+    }
+
+    .pointLeft {
+    -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+    }
