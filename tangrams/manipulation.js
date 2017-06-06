@@ -13,7 +13,7 @@ $(function() {
 	var triangles = ["lgtri", "lgtri2", "smtri", "smtri2", "medtri"];
   
 	$(document).keydown(function(e) {
-  	if ( currentShape.attr("id") === "lgtri") {//jquery.inArray($currentShape.attr("id"), triangles) != -1) {
+  	if (triangles.indexOf(currentShape.attr("id")) >= 0 )  {
        switch(e.which) {
         	case 37: 
             currentShape.toggleClass("pointLeft");
@@ -32,8 +32,9 @@ $(function() {
         	  break;
 
         	default: return; // exit this handler for other keys
-    	} 
-    } else if (currentShape.attr("id") === "square") {
+    	}
+    } 
+   else if (currentShape.attr("id") === "square") {
         switch(e.which) {
           case 37:
           case 39:
@@ -45,7 +46,8 @@ $(function() {
     } else {
     	  switch(e.which) {
          case 37:
-          console.log("parraaaalllellllooooooogrrrraaammm");
+         case 39:
+          currentShape.toggleClass("transformRL")
           break;
           
         default: return; 

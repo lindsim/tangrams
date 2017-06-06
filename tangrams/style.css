@@ -156,3 +156,10 @@
       -ms-transform: rotate(90deg);
 	     -o-transform: rotate(90deg);
     }
+
+    .transformRL {
+    -webkit-transform: skew(315deg) !important;
+	   -moz-transform: skew(315deg) !important;
+       -ms-transform: skew(315deg) !important;
+	       -o-transform: skew(315deg) !important;
+    }
