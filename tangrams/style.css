@@ -1,8 +1,17 @@
+/* import */
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
 /* divs */
+
+#info{
+  float: left;
+  position: absolute;
+  z-index: 2;
+}
 
 #playSpace {
   background-color: #ffffff;
-  height: 42em;
+  height: 41em;
   width: 50em;
   position: static;
 }
@@ -10,23 +19,64 @@
 #matchSpace {
   display: inline-block;
   float: left;
-  margin-left: 1em;
-  height: 41.25em;
+  margin-left: 20em;
+  height: 41em;
   width: 32em;
 }
 
 #shapeTray {
-  height: 41.25em;
+  height: 41em;
   width: 16em;
   float: left;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 0em;
 }
 
+/* headings */
+
+h1 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5em;
+  margin-top: 0em;
+  margin-left: 0em;
+  margin-bottom: 0em;
+  padding: 0em;
+}
+
+h2 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 4em;
+  margin-left: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0em;
+}
+
+h3 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 1.2em;
+  margin: 0em;
+}
+
+a {
+  color: transparent;
+}
+
+a:hover {
+  color: #2d61a6;
+  text-decoration: outline;
+}
+
+a:visited{
+  color: #592da6;
+}
 /* classes */
 
 .matching {
-  background-color: #000000;
-  opacity: 0.1;
+  border: 0.1em solid #000000;
   display: inline-block;
+  opacity: 0.7;
 }
 
 .shape {
@@ -36,7 +86,16 @@
   margin-right: 0.25em;
 }
 
+.rainbow {
+  background-image: linear-gradient(to bottom, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
+.matching {
+  
+}
 /* shape divs */
 
 #square {
@@ -55,7 +114,7 @@
        -ms-transform: skew(45deg);
 	       -o-transform: skew(45deg);
 	background: #ff7518;
-  margin-left: 4em;
+  margin-left: 4.5em;
 }
 
 #lgtri {
@@ -64,6 +123,7 @@
 	border-right: 8em solid transparent;
   border-left: 8em solid transparent;
 	border-bottom: 8em solid #2d61a6;
+  margin-left: 1em;
 }
 
 
@@ -73,6 +133,7 @@
 	border-right: 8em solid transparent;
   border-left: 8em solid transparent;
   border-bottom: 8em solid #4ed9b1;
+  margin-left: 1em;
 }
 
 #smtri {
@@ -104,7 +165,7 @@
 
 /* template/matching divs */
 
-#a {
+#one {
   width: 16em; 
   height: 16em; 
   margin-top: 35%;
@@ -163,3 +224,4 @@
        -ms-transform: skew(315deg) !important;
 	       -o-transform: skew(315deg) !important;
     }
+
