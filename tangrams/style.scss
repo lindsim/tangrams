@@ -1,4 +1,7 @@
-$dim: 1;
+//mixin
+
+
+//variables
 $red: #f53f00;
 $orange: 	#ff7518;
 $purple: #592da6;
@@ -9,30 +12,42 @@ $pink: #fc69b4;
 $gray: #4a5662;
 $white: #ffffff;
 $sqside: 5.6em;
+$scale: 1;
 
 
-#playspace {
+// divs and shape class
+#playSpace {
   background-color: $white;
   height: 50em;
   width: 50em;
+}
+
+#matchSpace {
+  background-color: $gray;
+  height: 40em;
+  width: 40em;
+}
+
+#shapeTray {
+  background-color: $blue;
+  height: 50em;
+  width: 16em;
 }
 
 .shape{
   opacity: 0.8;
 }
 
+
 #square {
   width: $sqside; 
   height: $sqside; 
   background-color: $red;
-   -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
    right: 8%;
    top: 32.6%;
    position: absolute;
   }
+
 
 #parallelo {
 	width: 8em;
@@ -63,10 +78,6 @@ $sqside: 5.6em;
 #lgtri2 {
   @extend #lgtri;
   border-bottom: 8em solid $green;
-    -webkit-transform: rotate(90deg);
-	   -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
   right: 25%;
   top: 25%;
   position: absolute;
@@ -78,10 +89,6 @@ $sqside: 5.6em;
 	border-right: 4em solid transparent;
   border-left: 4em  solid transparent;
 	border-bottom: 4em  solid $purple;
-   -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
   left: 61.99%;
   top: 61.99%;
   position: absolute;
@@ -91,10 +98,6 @@ $sqside: 5.6em;
 #smtri2 {
   @extend #smtri;
   border-bottom: 4em solid $pink; 
-   -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
     left: 24.8%;
     top: 25.19%;
     position: absolute;
@@ -106,20 +109,42 @@ $sqside: 5.6em;
 	border-right: $sqside solid transparent;
   border-left: $sqside solid transparent;
 	border-bottom: $sqside solid $gold;
-    -webkit-transform: rotate(45deg);
-	   -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-	     -o-transform: rotate(45deg);
   left: 51.9%;
   bottom: 70.5%;
   position: absolute;
     
 }
 
-#start {
-  width: 16em;
-  margin: 0 auto;
-  height: 16em;
-  }
+
   
+//animation
  
+ .pointLeft {
+    -webkit-transform: rotate(-90deg);
+	  -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+	     -o-transform: rotate(-90deg);
+    }
+
+    
+  .pointRight {
+    -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+    }
+  
+    .pointDown {
+    -webkit-transform: scale(1,-1);
+	  -moz-transform: scale(1,-1);
+      -ms-transform: scale(1,-1);
+	     -o-transform: scale(1, -1);
+    }
+ 
+     .pointUp {
+    -webkit-transform: scale(-1,1);
+	  -moz-transform: scale(-1,1);
+      -ms-transform: scale(-1,1);
+	     -o-transform: scale(-1,1);
+    }
+    

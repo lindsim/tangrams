@@ -1,18 +1,37 @@
-<title>Tangrams</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tangram</title>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="manipulation.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="info" class="rainbow">
+        <h1>T</h1>
+        <h2>a<br>n<br>g<br>r<br>a<br>m</h2>
+        <h3><a href="https://github.com/lindsim/tangrams">code</a></h3>
 
-<body>
-  <div id="playspace">
-    <div id="start">
-      <div id="parallelo" class="shape"></div>
-      <div id="lgtri" class="shape"></div>
-      <div id="smtri" class="shape"></div>
-      <div id="square" class="shape"></div>
-      <div id="smtri2" class="shape"></div>
-      <div id="lgtri2" class="shape"></div>
-      <div id="medtri" class="shape"></div>
+
+        <h3><a href="https://en.wikipedia.org/wiki/Tangram">info</a></h3>
     </div>
-  </div>
-</body>
+    <div id="playSpace">
+
+      <div id="shapeTray">
+        <div id="smtri" class="shape"></div>
+        <div id="smtri2" class="shape"></div> 
+        <div id="square" class="shape"></div>
+        <div id="parallelo" class="shape"></div>
+        <div id="medtri" class="shape"></div>
+        <div id="lgtri2" class="shape"></div>
+        <div id="lgtri" class="shape"></div>
+      </div>
+      <div id="matchSpace">
+        <div id="one" class="matching"></div>
+      </div>
+    </div>
+  </body>
+</html>
