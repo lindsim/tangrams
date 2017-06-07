@@ -4,33 +4,33 @@
 /* divs */
 
 #info{
-  float: left;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
+  text-align: center;
+  margin-left: 17em;
 }
 
 #playSpace {
   background-color: #ffffff;
   height: 41em;
-  width: 50em;
-  position: static;
+  width: 55em;
+  position: absolute;
+  z-index: 1;
 }
 
 #matchSpace {
   display: inline-block;
-  float: left;
-  margin-left: 20em;
-  height: 41em;
-  width: 32em;
+  margin-top: 12em;
+  position: absolute;
+  left: 17em;
 }
 
 #shapeTray {
   height: 41em;
-  width: 16em;
+  width: 17em;
   float: left;
   position: absolute;
-  z-index: 1;
-  margin-bottom: 0em;
+  z-index: 2;
 }
 
 /* headings */
@@ -38,19 +38,14 @@
 h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 5em;
-  margin-top: 0em;
-  margin-left: 0em;
-  margin-bottom: 0em;
+  margin: 0em;
   padding: 0em;
 }
 
 h2 {
   font-family: 'Black Ops One', cursive;
-  font-size: 4em;
-  margin-left: 0em;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  padding: 0em;
+  font-size: 2em;
+  margin: 0em;
 }
 
 h3 {
@@ -75,8 +70,8 @@ a:visited{
 
 .matching {
   border: 0.1em solid #000000;
-  display: inline-block;
   opacity: 0.7;
+
 }
 
 .shape {
@@ -86,15 +81,15 @@ a:visited{
   margin-right: 0.25em;
 }
 
-.rainbow {
-  background-image: linear-gradient(to bottom, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+.rainbowText {
+  background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.matching {
-  
+.rainbowBackground {
+  background-image: linear-gradient(to bottom, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
 }
 /* shape divs */
 
@@ -168,60 +163,117 @@ a:visited{
 #one {
   width: 16em; 
   height: 16em; 
-  margin-top: 35%;
   margin-left: 25%;
+}
 
+#two {
+  width: 11.3em;
+  height: 22.6em;
+  margin-left: 50%;
 }
   
+
+/* navigation buttons */
+
+.circle{
+  width: 2em;
+	height: 2em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+}
+
 /* transform */
  
- .turnLeft {
-    -webkit-transform: rotate(90deg);
-	  -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
-    }
-
-    
-  .turnRight {
-    -webkit-transform: rotate(45deg);
-	  -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-	     -o-transform: rotate(45deg);
-    }
-  
-    .pointDown {
-    -webkit-transform: rotate(180deg);
-	  -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-	     -o-transform: rotate(180deg);
-    }
-
-    .pointUp {
+  .rotate0 {
     -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
       -ms-transform:rotate(0deg);
 	     -o-transform: rotate(0deg);
     }
     
-    .pointRight{
+  .rotate45 {
     -webkit-transform: rotate(45deg);
 	  -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
 	     -o-transform: rotate(45deg);
     }
 
-    .pointLeft {
+    .rotate90 {
     -webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
 	     -o-transform: rotate(90deg);
     }
 
-    .transformRL {
-    -webkit-transform: skew(315deg) !important;
-	   -moz-transform: skew(315deg) !important;
-       -ms-transform: skew(315deg) !important;
-	       -o-transform: skew(315deg) !important;
+    .rotate135 {
+    -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
     }
 
+    .rotate180 {
+    -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+    }
+
+    .rotate225 {
+   -webkit-transform: rotate(225deg);
+	  -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+	     -o-transform: rotate(225deg);
+    }
+    
+    .rotate270 {
+    -webkit-transform: rotate(270deg);
+	  -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+	     -o-transform: rotate(270deg);
+    }
+  
+
+    .rotate315 {
+    -webkit-transform: rotate(315deg);
+	  -moz-transform: rotate(315deg);
+      -ms-transform: rotate(3150deg);
+	     -o-transform: rotate(315deg);
+    }
+
+
+
+
+
+
+
+
+
+    .parRight {
+    -webkit-transform: skew(315deg) !important;
+	   -moz-transform: skew(315deg)!important;
+       -ms-transform:  skew(315deg)!important;
+	       -o-transform: skew(315deg)!important;
+    }
+
+    .parLeft {
+    -webkit-transform: skew(45deg)!important;
+	  -moz-transform: skew(45deg)!important;
+      -ms-transform: skew(45deg)!important;
+	     -o-transform: skew(45deg)!important;
+    }
+
+    .parDown {
+    -webkit-transform: rotate(90deg) skew(315deg)!important;
+	  -moz-transform: rotate(90deg) skew(315deg)!important;
+      -ms-transform: rotate(90deg) skew(315deg)!important;
+	     -o-transform: rotate(9deg) skew(315deg)!important;
+    }
+
+    .parUp {
+    -webkit-transform: rotate(90deg) skew(45deg) !important;
+	   -moz-transform: rotate(90deg) skew(45deg) !important;
+       -ms-transform: rotate(90deg) skew(45deg) !important;
+	       -o-transform: rotate(90deg) skew(45deg) !important;
+    }
