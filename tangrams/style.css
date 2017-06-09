@@ -181,7 +181,16 @@ a:visited{
   height: 22.6em;
   margin-left: 50%;
 }
-  
+
+#three {
+  width: 32em;
+  height: 32em;
+  border-right: #000000;
+  border-left: #000000;
+  border-top: #000000;
+  border-bottom:#ffffff; 
+}
+
 
 /* navigation buttons */
 
@@ -252,14 +261,14 @@ a:visited{
 	     -o-transform: rotate(315deg);
     }
 
-    .parRight {
+    .skew315 {
     -webkit-transform: skew(315deg) !important;
 	   -moz-transform: skew(315deg)!important;
        -ms-transform:  skew(315deg)!important;
 	       -o-transform: skew(315deg)!important;
     }
 
-    .parLeft {
+    .skew45 {
     -webkit-transform: skew(45deg)!important;
 	  -moz-transform: skew(45deg)!important;
       -ms-transform: skew(45deg)!important;
@@ -278,4 +287,32 @@ a:visited{
 	   -moz-transform: rotate(90deg) skew(45deg) !important;
        -ms-transform: rotate(90deg) skew(45deg) !important;
 	       -o-transform: rotate(90deg) skew(45deg) !important;
+    }
+
+    .par5 {
+    -webkit-transform: rotate(45deg) skew(315deg)!important;
+	  -moz-transform: rotate(45deg) skew(315deg)!important;
+      -ms-transform: rotate(45deg) skew(315deg)!important;
+	     -o-transform: rotate(45deg) skew(315deg)!important;
+    }
+
+    .par6 {
+    -webkit-transform: rotate(45deg) skew(45deg) !important;
+	   -moz-transform: rotate(45deg) skew(45deg) !important;
+       -ms-transform: rotate(45deg) skew(45deg) !important;
+	       -o-transform: rotate(45deg) skew(45deg) !important;
+    }
+
+    .par7 {
+    -webkit-transform: rotate(315deg) skew(315deg)!important;
+	  -moz-transform: rotate(315deg) skew(315deg)!important;
+      -ms-transform: rotate(315deg) skew(315deg)!important;
+	     -o-transform: rotate(315deg) skew(315deg)!important;
+    }
+
+    .par8 {
+    -webkit-transform: rotate(315deg) skew(45deg) !important;
+	   -moz-transform: rotate(315deg) skew(45deg) !important;
+       -ms-transform: rotate(315deg) skew(45deg) !important;
+	       -o-transform: rotate(315deg) skew(45deg) !important;
     }
