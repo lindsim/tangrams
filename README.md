@@ -9,8 +9,8 @@ Note: <br>
 I made a tangram puzzle to get better at SCSS/CSS and Javascript/Jquery, and because I've been wanting to make this for a while. I limited myself to these technologies and HTML. <br>
 <br>
 To do:
-  <br>make 6 more templates 
-  <br>link the numbers to templates
+  <br>make 5 templates total
+  <br>make navigation to choose template
   <br>refactor the movement code so it is more natural (and uses arrow keys only)
 <br>
 <br>
