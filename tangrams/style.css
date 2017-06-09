@@ -91,69 +91,79 @@ a:visited{
 .rainbowBackground {
   background-image: linear-gradient(to bottom, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
 }
-/* shape divs */
+/* shape classes */
 
-#square {
+.square {
   width: 5.6em; 
   height: 5.6em; 
-  background-color: #f53f00;
-  margin-left: 5.2em;
   }
 
 
-#parallelo {
+.par {
 	width: 8em;
 	height: 4em;
 	-webkit-transform: skew(45deg);
 	   -moz-transform: skew(45deg);
        -ms-transform: skew(45deg);
 	       -o-transform: skew(45deg);
+}
+
+.tri{
+	width: 0;
+	height: 0;
+}
+
+.lg {
+	border-right: 8em solid transparent;
+  border-left: 8em solid transparent;
+  }
+
+
+.sm {
+	border-right: 4em solid transparent;
+  border-left: 4em  solid transparent;
+}
+
+.md {
+	border-right: 5.6em solid transparent;
+  border-left: 5.6em solid transparent;
+}
+
+
+/* shape divs */
+
+#square {
+  background-color: #f53f00;
+  margin-left: 5.2em;
+}
+
+#par {
 	background: #ff7518;
   margin-left: 4.5em;
 }
 
 #lgtri {
-	width: 0;
-	height: 0;
-	border-right: 8em solid transparent;
-  border-left: 8em solid transparent;
 	border-bottom: 8em solid #2d61a6;
   margin-left: 1em;
 }
 
 
 #lgtri2 {
-  width: 0;
-	height: 0;
-	border-right: 8em solid transparent;
-  border-left: 8em solid transparent;
   border-bottom: 8em solid #4ed9b1;
   margin-left: 1em;
 }
 
 #smtri {
-	width: 0;
-	height: 0;
-	border-right: 4em solid transparent;
-  border-left: 4em  solid transparent;
 	border-bottom: 4em  solid #592da6;
   margin-left: 4em;
 }
 
 #smtri2 {
-	width: 0;
-	height: 0;
-	border-right: 4em solid transparent;
-  border-left: 4em  solid transparent;
   border-bottom: 4em solid #fc69b4;  
   margin-left: 4em; 
 }
 
-#medtri {
-	width: 0;
-	height: 0;
-	border-right: 5.6em solid transparent;
-  border-left: 5.6em solid transparent;
+#mdtri {
 	border-bottom: 5.6em solid #ffe135;
   margin-left: 2.6em;
 }
@@ -241,14 +251,6 @@ a:visited{
       -ms-transform: rotate(3150deg);
 	     -o-transform: rotate(315deg);
     }
-
-
-
-
-
-
-
-
 
     .parRight {
     -webkit-transform: skew(315deg) !important;

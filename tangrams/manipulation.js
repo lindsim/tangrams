@@ -17,7 +17,7 @@ $(function() {
   //this code needs to be refactored; there must be a better way to do this
 
 	$(document).keydown(function(e) {
-  	if (triangles.indexOf(currentShape.attr("id")) >= 0 )  {
+  	if (currentShape.hasClass("tri"))  {
 
        switch(e.which) {
 
@@ -55,7 +55,7 @@ $(function() {
 
         	default: return; // exit this handler for other keys
     	}
-    } else if (currentShape.attr("id") === "square") {
+    } else if (currentShape.hasClass("square")) {
         switch(e.which) {
           case 37:
           case 39:
