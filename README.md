@@ -1,8 +1,8 @@
 # tangram
 
 Directions:<br>
-The object of the puzzle is to fit all of the shape pieces into the outlined shape. 
-<p>Drag the shapes with your mouse. Rotate the shapes using the arrow keys. Triangles move with the arrow keys and the enter key, the shift key, the / key, and the ' key. </p>
+The object of the puzzle is to fit all of the shape pieces into the outlined shape (called templates in the code). 
+<p>Drag the shapes with your mouse. Rotate the square using the left and right arrow keys. Rotate the other shapes using the left, right, up, and down arrow keys and the enter, shift, slash (/), and quotation mark (') keys. </p>
 
 
 Note: <br>
@@ -15,6 +15,8 @@ To do:
 <br>
 <br>
 To maybe do:
+  <br>programmatically generate templates and figure out which ones are best for the game and which are easier/harder to solve (maybe using user input to determine difficulty)
   <br>add game mode, where templates get gradually harder?
   <br>make two modes, free play and matching?
   <br>create answers and allow player to reveal them? 
+ 
