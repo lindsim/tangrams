@@ -36,16 +36,20 @@
 /* headings */
 
 h1 {
+  letter-spacing: 0.1em;
   font-family: 'Black Ops One', cursive;
   font-size: 5em;
   margin: 0em;
   padding: 0em;
+  text-shadow: 0.07em 0em 0em #000000;
 }
 
 h2 {
   font-family: 'Black Ops One', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0em;
+  text-align: left;
+  text-shadow: 0.05em 0em 0em #000000;
 }
 
 h3 {
@@ -55,27 +59,24 @@ h3 {
 }
 
 a {
-  color: transparent;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #2d61a6;
-  text-decoration: outline;
+  color: transparent;
+  text-decoration: underline;
+
+
 }
 
 a:visited{
-  color: #592da6;
+  color: #000000;
+  text-decoration: none;
 }
 /* classes */
 
-.matching {
-  
-  opacity: 0.7;
-
-}
-
 .shape {
-  opacity: 0.75;
+  opacity: 0.8;
   margin-bottom: 0.25em;
   margin-top: 0.25em;
   margin-right: 0.25em;
@@ -90,6 +91,7 @@ a:visited{
 
 .rainbowBackground {
   background-image: linear-gradient(to bottom, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  color: #000000;
 }
 
 .pinkpurp {
