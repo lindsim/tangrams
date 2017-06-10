@@ -6,7 +6,7 @@ The object of the puzzle is to fit all of the shape pieces into the outlined sha
 
 
 Note: <br>
-I made a tangram puzzle to get better at SCSS/CSS and Javascript/Jquery, and because I've been wanting to make this for a while. I limited myself to these technologies and HTML. <br>
+I made a tangram puzzle to get better at SCSS/CSS and Javascript/Jquery, and because I've been wanting to make this for a while. I intentionally limited myself to these technologies and HTML. <br>
 <br>
 To do:
   <br>make 5 templates total
