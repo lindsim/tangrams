@@ -148,7 +148,6 @@ a:visited{
 
 
 #square {
-  /*background-color: #f53f00;*/
   margin-left: 5.2em;
   background-color: #f53f00;
 }
@@ -286,11 +285,38 @@ a:visited{
 }
 
 #six{
-
+  margin-top: 1em;
+	border: 0.2em dashed #000000;
+	height: 16em;
+	width: 30.8em;
+  position: relative;
+  background: transparent;
 }
-#sixafter{
 
+#six:after {
+  content: "";
+  border-bottom: 0.2em dashed #000000;
+	border-left: 0.2em dashed #000000;
+	height: 5.6em;
+	width: 11.4em;
+  margin-top: 11.4em;
+  margin-left: -11.4em;
+  position: absolute;
+  background: transparent;
 }
+	
+/*make two triangle cut outs as the before and after with the hyptotenuse having an outline*/
+#six:before{
+  content: "";
+  border-left: 0.2em dashed #000000;
+	height: 16em;
+	width: 0em;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 0em 0em;
+}
+
 	
 
 
