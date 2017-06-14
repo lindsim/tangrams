@@ -3,60 +3,41 @@
 
 /* divs */
 
-#info{
-  position: absolute;
-  z-index: 3;
-  text-align: center;
-  margin-left: 17em;
-}
-
-#playSpace {
-  background-color: #ffffff;
-  height: 41em;
-  width: 55em;
-  position: absolute;
-  z-index: 1;
-}
-
 #matchSpace {
   display: inline-block;
-  margin-top: 12em;
+  top: 30%;
   position: absolute;
-  left: 17em;
+  left: 10%;
+  width: 30em;
+  height: 30em;
 }
 
 #shapeTray {
   height: 41em;
   width: 17em;
-  float: left;
+  left: 33em;
   position: absolute;
-  z-index: 2;
 }
+
+#playSpace {
+  background-color: transparent;
+  position: absolute;
+  height: 42em;
+  width: 51em;
+}
+
 
 /* headings */
 
 h1 {
   letter-spacing: 0.1em;
-  font-family: 'Black Ops One', cursive;
-  font-size: 5em;
+  font-size: 6.5em;
   margin: 0em;
   padding: 0em;
-  text-shadow: 0.07em 0em 0em #000000;
 }
 
-h2 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 2.5em;
-  margin: 0em;
-  text-align: left;
-  text-shadow: 0.05em 0em 0em #000000;
-}
 
-h3 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 1.2em;
-  margin: 0em;
-}
+/* links */
 
 a {
   text-decoration: none;
@@ -73,20 +54,40 @@ a:visited{
   color: #000000;
   text-decoration: none;
 }
+
+/* elements */
+
+header {
+  position: absolute;
+  text-align: right;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Black Ops One', cursive;
+} 
+
 /* classes */
+
+.directions {
+  visibility: hidden;
+}
 
 .shape {
   opacity: 0.8;
   margin-bottom: 0.25em;
   margin-top: 0.25em;
   margin-right: 0.25em;
+  z-index: 2;
 }
 
-.rainbowText {
+.rainbowBackText {
   background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  text-shadow: 0.07em 0em 0em #000000;
+
 }
 
 .rainbowBackground {
@@ -189,14 +190,12 @@ a:visited{
 #one {
   width: 16em; 
   height: 16em; 
-  margin-left: 25%;
   border: 0.2em dashed #000000;
 }
 
 #two {
   width: 11.3em;
   height: 22.6em;
-  margin-left: 50%;
   border: 0.2em dashed #000000;
 }
 
@@ -248,8 +247,6 @@ a:visited{
 }
 
 #five {
-  margin-top: 1em;
-  margin-left: 4em;
   border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
 	height: 11.3em;
@@ -285,50 +282,39 @@ a:visited{
 }
 
 #six{
-  margin-top: 1em;
-	border: 0.2em dashed #000000;
-	height: 16em;
-	width: 30.8em;
-  position: relative;
+  margin-left: 5em;
+  border-top: 0.2em dashed #000000;
+	border-left: 0.2em dashed #000000;
+	height: 11.2em;
+	width: 11.2em;
   background: transparent;
 }
 
-#six:after {
+#six:before {
   content: "";
-  border-bottom: 0.2em dashed #000000;
-	border-left: 0.2em dashed #000000;
-	height: 5.6em;
-	width: 11.4em;
-  margin-top: 11.4em;
-  margin-left: -11.4em;
+	border-bottom: 0.2em dashed #000000;
+  border-right: 0.2em dashed #000000;
+	height: 11.2em;
+	width: 11.2em;
   position: absolute;
   background: transparent;
+  margin-left: 5.8em;
+  margin-top: 5.8em;
 }
 	
-/*make two triangle cut outs as the before and after with the hyptotenuse having an outline*/
-#six:before{
+/*make two triangle cut outs as the before and after with the hyptotenuse having an outline?*/
+#six:after{
   content: "";
-  border-left: 0.2em dashed #000000;
+  border-top: 0.2em dashed #000000;
+  border-bottom: 0.2em dashed #000000;
 	height: 16em;
-	width: 0em;
+	width: 7.7em;
   position: absolute;
   background: transparent;
   transform: rotate(45deg);
-  transform-origin: 0em 0em;
+  transform-origin: 6em 14em;
 }
 
-	
-
-
-/* navigation buttons */
-
-.circle{
-  width: 2em;
-	height: 2em;
-	-moz-border-radius: 1em;
-	-webkit-border-radius: 1em;
-	border-radius: 1em;
-}
 
 /* transform */
  

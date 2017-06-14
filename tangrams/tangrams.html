@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Tangram</title>
-
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="manipulation.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="info" class="rainbowText">
-        <h1>Tangram</h1>
-        <h3>
-         	&Delta; &Delta; &Delta; <a href="https://github.com/lindsim/tangrams">directions</a>
-          &Delta; &Delta;  <a href="https://github.com/lindsim/tangrams">code</a>
-          &Delta; &Delta;  <a href="https://en.wikipedia.org/wiki/Tangram">info</a> &Delta; &Delta; &Delta; 
-        </h3>
-    </div>
+    <header>
+        <h1 class="rainbowBackText">Tangram</h1>  
+        &#8594; <a class="rainbowBackText" href="#">Directions</a>
+        &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
+        &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+    </header>
     <div id="playSpace">
       <div id="shapeTray">
         <div id="smtri" class="shape tri sm"></div>
@@ -29,8 +26,11 @@
         <div id="lgtri" class="shape tri lg"></div>
       </div>
       <div id="matchSpace">
-        <div id="six"></div>
+        <div id="six">
+        </div>
       </div>
+
     </div>
   </body>
+
 </html>

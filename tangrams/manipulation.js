@@ -1,7 +1,8 @@
 $(function() {
 
   $(".shape").draggable({
-    containment: "#playspace", scroll: false
+    containment: "#playSpace", 
+    scroll: false
   });
   
   var currentShape = null;
@@ -9,7 +10,7 @@ $(function() {
 	$(".shape").mouseover(function() {
   	currentShape = $(this);
   })
-  
+
 	var triangles = ["lgtri", "lgtri2", "smtri", "smtri2", "medtri"];
   var triClasses = "rotate0 rotate45 rotate90 rotate135 rotate180 rotate225 rotate270 rotate315";
   var parClasses = "parRight parLeft parUp parDown par5 par6 par7 par8 skew315 skew45";
