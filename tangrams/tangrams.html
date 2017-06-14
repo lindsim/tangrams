@@ -3,37 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <title>Tangram</title>
-
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="manipulation.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="info" class="rainbowText">
-        <h1>Tangrams</h1>
-        <h3>
-          <a href="https://github.com/lindsim/tangrams">+++directions+++</a>
-          <a href="https://github.com/lindsim/tangrams">code</a>+++
-          <a href="https://en.wikipedia.org/wiki/Tangram">info</a>+++
-        </h3>
-
-        <h2>
-          <a href="">1</a> -
-          <a href=""> 2</a> -
-          <a href=""> 3</a> -
-          <a href=""> 4</a> -
-          <a href=""> 5</a> -
-          <a href=""> 6</a> -
-          <a href=""> 7</a> -
-          <a href=""> 8</a>
-       </h2>
-    </div>
+    <header>
+        <h1 class="rainbowBackText">Tangram</h1>  
+        &#8594; <a class="rainbowBackText" href="#">Directions</a>
+        &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
+        &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+    </header>
     <div id="playSpace">
-
       <div id="shapeTray">
         <div id="smtri" class="shape tri sm"></div>
-        <div id="smtri2" class="shape tri sm"></div> 
+        <div id="smtri2" class="shape tri sm" ></div> 
         <div id="square" class="shape square"></div>
         <div id="par" class="shape par"></div>
         <div id="mdtri" class="shape tri md"></div>
@@ -41,10 +26,11 @@
         <div id="lgtri" class="shape tri lg"></div>
       </div>
       <div id="matchSpace">
-       <!--<div id="one" class="matching"></div>
-        <div id="two" class="matching"></div>-->
-        <div id="three" class="matching"></div>
+        <div id="six">
+        </div>
       </div>
+
     </div>
   </body>
+
 </html>
