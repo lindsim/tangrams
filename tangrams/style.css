@@ -25,7 +25,8 @@
   background-color: #ffffff;
   padding: 1em;
   font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  border: 0.15em solid #000000;
 }
 
 /* elements */ 
@@ -77,8 +78,8 @@ a {
 }
 
 a:hover {
-  color: transparent;
-  text-decoration: underline;
+  color: #000000;
+  text-shadow: 0em 0em 1em #fc69b4;
 }
 
 a:visited {
@@ -87,20 +88,19 @@ a:visited {
 }
 
 /* classes */
-.ui-dialog {
-background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
-padding: 0.25em;
-}
 
 
-.title {
-  width: 10em;
-  margin: 0em;
+.choices {
+  padding: 0em 0.1em 0em 0.1em;
+  text-decoration: none;
 }
 
-.template {
-  margin: 0em 0em 0em 11em;
+.active {
+  text-shadow: 0em 0em 1em #fc69b4;
+  border: 0.2em solid #fc69b4;
+  color: #000000;
 }
+
 
 .shape {
   opacity: 0.8;
@@ -177,7 +177,7 @@ padding: 0.25em;
 #lgtri {
 	border-bottom: 8em solid #2d61a6;
   margin-left: 1em;
-  background-clip:border;
+  background-clip: border;
 }
 
 
