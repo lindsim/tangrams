@@ -106,6 +106,3 @@ $(function() {
     e.preventDefault(); // prevent the default action from arrow keys
   });
 });
-
-
-

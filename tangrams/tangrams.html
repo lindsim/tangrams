@@ -6,16 +6,30 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="manipulation.js"></script>
+    <script type="text/javascript" src="directions.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-        <h1 class="rainbowBackText">Tangram</h1>  
-        &#8594; <a class="rainbowBackText" href="#">Directions</a>
-        &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
-        &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+      <h1 class="rainbowBackText">Tangram</h1>  
+      &#8594; <a id="directLink" class="rainbowBackText" href="#">Directions</a>
+      &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
+      &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+
+      <nav class="rainbowBackText">
+        <ul>
+          <li class="title"><a>Select an outline:</a></li>
+          <li class="template"><a>blank</a></li>
+          <li class="template"><a>1</a></li>
+          <li class="template"><a>2</a></li> 
+          <li class="template"><a>3</a></li>
+          <li class="template"><a>4</a></li>
+          <li class="template"><a>5</a></li>
+          <li class="template"><a>6</a></li>
+        </ul>
+      </nav>
     </header>
-    <div id="playSpace">
+    <main>
       <div id="shapeTray">
         <div id="smtri" class="shape tri sm"></div>
         <div id="smtri2" class="shape tri sm" ></div> 
@@ -26,11 +40,20 @@
         <div id="lgtri" class="shape tri lg"></div>
       </div>
       <div id="matchSpace">
+        <div id="directText">
+        <p>The object of the puzzle is to fit all of the shape pieces
+        into the outlined area such that no piece overlaps another or is outside of the outline.  
+        </p>
+        <p>To move the shapes, click and drag the shape pieces with your mouse. 
+        </p>
+        <p>To rotate the shapes (except for the square), use the left, right, up, and down arrow keys 
+          as well as the enter, shift, slash (/), and quotation mark (') keys. 
+          The square rotates with the left and right arrow keys only. 
+        </p>
+        </div>
         <div id="six">
         </div>
       </div>
-
-    </div>
+    </main>
   </body>
-
 </html>

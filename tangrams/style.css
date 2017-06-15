@@ -1,4 +1,5 @@
 /* import */
+
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 
 /* divs */
@@ -19,7 +20,19 @@
   position: absolute;
 }
 
-#playSpace {
+#directText{
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 1em;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 0.8em;
+}
+
+/* elements */ 
+
+
+
+main {
   background-color: transparent;
   position: absolute;
   height: 42em;
@@ -27,7 +40,27 @@
 }
 
 
-/* headings */
+header {
+  position: absolute;
+  text-align: right;
+  z-index: 1;
+}
+
+
+body {
+  font-family: 'Black Ops One', cursive;
+} 
+
+nav {
+  font-size: 1em;
+  float: left;
+  padding: 0em;
+}
+
+ul {
+  padding: 0em;
+  margin: 0em;
+}
 
 h1 {
   letter-spacing: 0.1em;
@@ -46,31 +79,27 @@ a {
 a:hover {
   color: transparent;
   text-decoration: underline;
-
-
 }
 
-a:visited{
+a:visited {
   color: #000000;
   text-decoration: none;
 }
 
-/* elements */
-
-header {
-  position: absolute;
-  text-align: right;
-  z-index: 1;
+/* classes */
+.ui-dialog {
+background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+padding: 0.25em;
 }
 
-body {
-  font-family: 'Black Ops One', cursive;
-} 
 
-/* classes */
+.title {
+  width: 10em;
+  margin: 0em;
+}
 
-.directions {
-  visibility: hidden;
+.template {
+  margin: 0em 0em 0em 11em;
 }
 
 .shape {
@@ -95,15 +124,6 @@ body {
   color: #000000;
 }
 
-.pinkpurp {
-  background-image: linear-gradient(to bottom, #592da6, #fc69b4);
-}
-
-.bluegreen {
-  background-image: linear-gradient(to bottom, #4ed9b1, #2d61a6);
-}
-
-
 /* shape classes */
 
 .square {
@@ -111,7 +131,6 @@ body {
   height: 5.6em; 
 
   }
-
 
 .par {
 	width: 8em;
@@ -143,10 +162,7 @@ body {
   border-left: 5.6em solid transparent;
 }
 
-
 /* shape divs */
-
-
 
 #square {
   margin-left: 5.2em;
@@ -208,10 +224,9 @@ body {
   position: relative;
   background: transparent;
   transform-origin: 0 100%;
-
 }
 
-#three:after{
+#three:after {
   content: "";
   width: 31.9em;
   border-top: 0.2em dashed #000000;
@@ -219,7 +234,7 @@ body {
   background: transparent;
   transform: rotate(45deg);
   transform-origin: 0;
-  }
+}
 
 #four {
   margin-top: 10em;
@@ -243,7 +258,6 @@ body {
   background: transparent;
   transform: rotate(45deg);
   transform-origin: 19.4em 7.6em;
-
 }
 
 #five {
@@ -253,9 +267,9 @@ body {
 	width: 22.6em;
   position: relative;
   background: transparent;
-
 }
-#five:after{
+
+#five:after {
   content: "";
   border-bottom: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
@@ -267,7 +281,7 @@ body {
   transform: rotate(45deg);
 }
 
-#five:before{
+#five:before {
   content: "";
   margin-top: 3.5em;
   margin-left: 9.8em;
@@ -281,7 +295,7 @@ body {
   transform: rotate(45deg);
 }
 
-#six{
+#six {
   margin-left: 5em;
   border-top: 0.2em dashed #000000;
 	border-left: 0.2em dashed #000000;
@@ -302,8 +316,7 @@ body {
   margin-top: 5.8em;
 }
 	
-/*make two triangle cut outs as the before and after with the hyptotenuse having an outline?*/
-#six:after{
+#six:after {
   content: "";
   border-top: 0.2em dashed #000000;
   border-bottom: 0.2em dashed #000000;
@@ -318,115 +331,115 @@ body {
 
 /* transform */
  
-  .rotate0 {
+ .rotate0 {
     -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
       -ms-transform:rotate(0deg);
 	     -o-transform: rotate(0deg);
-    }
+}
     
-  .rotate45 {
+.rotate45 {
     -webkit-transform: rotate(45deg);
 	  -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
 	     -o-transform: rotate(45deg);
-    }
+}
 
-    .rotate90 {
+.rotate90 {
     -webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
 	     -o-transform: rotate(90deg);
-    }
+}
 
-    .rotate135 {
+.rotate135 {
     -webkit-transform: rotate(135deg);
 	  -moz-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
 	     -o-transform: rotate(135deg);
-    }
+}
 
-    .rotate180 {
+.rotate180 {
     -webkit-transform: rotate(180deg);
 	  -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
 	     -o-transform: rotate(180deg);
-    }
+}
 
-    .rotate225 {
+.rotate225 {
    -webkit-transform: rotate(225deg);
 	  -moz-transform: rotate(225deg);
       -ms-transform: rotate(225deg);
 	     -o-transform: rotate(225deg);
-    }
+}
     
-    .rotate270 {
+.rotate270 {
     -webkit-transform: rotate(270deg);
 	  -moz-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
 	     -o-transform: rotate(270deg);
-    }
+}
   
 
-    .rotate315 {
+.rotate315 {
     -webkit-transform: rotate(315deg);
 	  -moz-transform: rotate(315deg);
       -ms-transform: rotate(3150deg);
 	     -o-transform: rotate(315deg);
-    }
+}
 
-    .skew315 {
+.skew315 {
     -webkit-transform: skew(315deg) !important;
 	   -moz-transform: skew(315deg)!important;
        -ms-transform:  skew(315deg)!important;
 	       -o-transform: skew(315deg)!important;
-    }
+}
 
-    .skew45 {
+.skew45 {
     -webkit-transform: skew(45deg)!important;
 	  -moz-transform: skew(45deg)!important;
       -ms-transform: skew(45deg)!important;
 	     -o-transform: skew(45deg)!important;
-    }
+}
 
-    .parDown {
+.parDown {
     -webkit-transform: rotate(90deg) skew(315deg)!important;
 	  -moz-transform: rotate(90deg) skew(315deg)!important;
       -ms-transform: rotate(90deg) skew(315deg)!important;
 	     -o-transform: rotate(9deg) skew(315deg)!important;
-    }
+}
 
-    .parUp {
+.parUp {
     -webkit-transform: rotate(90deg) skew(45deg) !important;
 	   -moz-transform: rotate(90deg) skew(45deg) !important;
        -ms-transform: rotate(90deg) skew(45deg) !important;
 	       -o-transform: rotate(90deg) skew(45deg) !important;
-    }
+}
 
-    .par5 {
+.par5 {
     -webkit-transform: rotate(45deg) skew(315deg)!important;
 	  -moz-transform: rotate(45deg) skew(315deg)!important;
       -ms-transform: rotate(45deg) skew(315deg)!important;
 	     -o-transform: rotate(45deg) skew(315deg)!important;
-    }
+}
 
-    .par6 {
+.par6 {
     -webkit-transform: rotate(45deg) skew(45deg) !important;
 	   -moz-transform: rotate(45deg) skew(45deg) !important;
        -ms-transform: rotate(45deg) skew(45deg) !important;
 	       -o-transform: rotate(45deg) skew(45deg) !important;
-    }
+}
 
-    .par7 {
+.par7 {
     -webkit-transform: rotate(315deg) skew(315deg)!important;
 	  -moz-transform: rotate(315deg) skew(315deg)!important;
       -ms-transform: rotate(315deg) skew(315deg)!important;
 	     -o-transform: rotate(315deg) skew(315deg)!important;
-    }
+}
 
-    .par8 {
+.par8 {
     -webkit-transform: rotate(315deg) skew(45deg) !important;
 	   -moz-transform: rotate(315deg) skew(45deg) !important;
        -ms-transform: rotate(315deg) skew(45deg) !important;
 	       -o-transform: rotate(315deg) skew(45deg) !important;
-    }
+}
