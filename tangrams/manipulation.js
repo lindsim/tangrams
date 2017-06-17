@@ -6,9 +6,17 @@ $(function() {
   });
   
   var currentShape = null;
+  var previousShape = null;
 
-	$(".shape").mouseover(function() {
+
+	$(".shape").mouseover(function(event) {
+    //console.log((event.pageX, event.pageY).getAttr;
+    previousShape = currentShape;
   	currentShape = $(this);
+    $(this).addClass("current");
+    if (previousShape) {
+      previousShape.removeClass("current");
+    }
   })
 
 	var triangles = ["lgtri", "lgtri2", "smtri", "smtri2", "medtri"];
@@ -18,7 +26,7 @@ $(function() {
   //this code needs to be refactored; there must be a better way to do this
 
 	$(document).keydown(function(e) {
-  	if (currentShape.hasClass("tri"))  {
+  	if (currentShape && currentShape.hasClass("tri"))  {
 
        switch(e.which) {
           //left arrow

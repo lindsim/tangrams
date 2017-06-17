@@ -1,14 +1,15 @@
 /* import */
 
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
 
 /* divs */
 
+#links {
+  float: right;
+}
+
 #matchSpace {
-  display: inline-block;
-  top: 30%;
-  position: absolute;
-  left: 10%;
   width: 30em;
   height: 30em;
 }
@@ -16,17 +17,17 @@
 #shapeTray {
   height: 41em;
   width: 17em;
-  left: 33em;
-  position: absolute;
+  position: relative;
+  z-index: 3;
 }
 
 #directText{
-  display: inline-block;
   background-color: #ffffff;
   padding: 1em;
-  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.9em;
   border: 0.15em solid #000000;
+  z-index: 4;
 }
 
 /* elements */ 
@@ -35,16 +36,14 @@
 
 main {
   background-color: transparent;
-  position: absolute;
   height: 42em;
   width: 51em;
 }
 
 
 header {
-  position: absolute;
-  text-align: right;
   z-index: 1;
+  max-width: 36em;
 }
 
 
@@ -54,10 +53,7 @@ body {
 
 nav {
   font-size: 1em;
-  float: left;
-  padding: 0em;
 }
-
 ul {
   padding: 0em;
   margin: 0em;
@@ -90,6 +86,20 @@ a:visited {
 /* classes */
 
 
+.centerContent{
+  position: relative;
+  left: -50%;
+}
+
+.centerWrap{
+   position: absolute;
+   left: 50%;
+}
+
+.current {
+  opacity: 0.7 !important; 
+}
+
 .choices {
   padding: 0em 0.1em 0em 0.1em;
   text-decoration: none;
@@ -98,16 +108,13 @@ a:visited {
 .active {
   text-shadow: 0em 0em 1em #fc69b4;
   border: 0.2em solid #fc69b4;
-  color: #000000;
 }
 
 
 .shape {
-  opacity: 0.8;
-  margin-bottom: 0.25em;
-  margin-top: 0.25em;
-  margin-right: 0.25em;
+  opacity: 1;
   z-index: 2;
+  overflow: hidden;
 }
 
 .rainbowBackText {
@@ -126,79 +133,72 @@ a:visited {
 
 /* shape classes */
 
+.tri {
+   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+}
+
 .square {
   width: 5.6em; 
-  height: 5.6em; 
-
+  height: 5.6em;
+  margin-top: 0.25em; 
   }
 
 .par {
 	width: 8em;
 	height: 4em;
-	-webkit-transform: skew(45deg);
-	   -moz-transform: skew(45deg);
-       -ms-transform: skew(45deg);
-	       -o-transform: skew(45deg);
-}
-
-.tri{
-	width: 0;
-	height: 0;
+  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  margin-top: 0.25em;
 }
 
 .lg {
-	border-right: 8em solid transparent;
-  border-left: 8em solid transparent;
-  }
+  width: 16em;
+  height: 16em;
+  margin-top: -7.75em;
+}
 
 
 .sm {
-	border-right: 4em solid transparent;
-  border-left: 4em  solid transparent;
+  width: 8em;
+  height: 8em;
+  margin-top: -3.75em;
 }
 
 .md {
-	border-right: 5.6em solid transparent;
-  border-left: 5.6em solid transparent;
+  width: 11.2em;
+  height: 11.2em;
+  margin-top: -5.35em;
 }
 
 /* shape divs */
 
-#square {
-  margin-left: 5.2em;
+.red {
   background-color: #f53f00;
 }
 
-#par {
+.orange {
 	background: #ff7518;
-  margin-left: 4.5em;
+
 }
 
-#lgtri {
-	border-bottom: 8em solid #2d61a6;
-  margin-left: 1em;
-  background-clip: border;
+.blue {
+	background-color: #2d61a6;
 }
 
-
-#lgtri2 {
-  border-bottom: 8em solid #4ed9b1;
-  margin-left: 1em;
+.green {
+background-color:#4ed9b1;
 }
 
-#smtri {
-	border-bottom: 4em  solid #592da6;
-  margin-left: 4em;
+.purple {
+	background-color: #592da6;
 }
 
-#smtri2 {
-  border-bottom: 4em solid #fc69b4;  
-  margin-left: 4em; 
+.pink {
+  background-color: #fc69b4;  
 }
 
-#mdtri {
-	border-bottom: 5.6em solid #ffe135;
-  margin-left: 2.6em;
+.yellow {
+  background-color: #ffe135;
+
 }
 
 /* template/matching divs */
@@ -211,13 +211,13 @@ a:visited {
 
 #two {
   width: 11.3em;
-  height: 22.6em;
+  height: 22.63em;
   border: 0.2em dashed #000000;
 }
 
 #three {
-  width: 22.5em;
-  height: 22.5em;
+  width: 22.63em;
+  height: 22.63em;
   border: 0.2em dashed #000000;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -242,7 +242,7 @@ a:visited {
 	border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
 	height: 5.6em;
-	width: 22.4em;
+	width: 22.63em;
   position: relative;
   background: transparent;
 }
@@ -250,14 +250,14 @@ a:visited {
 
 #four:after {
   content: "";
-  width: 15.6em;
-  height: 15.6em;
+  width: 16em;
+  height: 16em;
   border-top: 0.2em dashed #000000;
   border-left: 0.2em dashed #000000;
   position: absolute;
   background: transparent;
   transform: rotate(45deg);
-  transform-origin: 19.4em 7.6em;
+  transform-origin: 19.8em 7.7em;
 }
 
 #five {
