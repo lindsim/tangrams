@@ -144,9 +144,9 @@ a:visited {
   }
 
 .par {
-	width: 8em;
-	height: 4em;
-  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+	width: 11.2em;
+	height: 5.6em;
+  clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0 100%);
   margin-top: 0.25em;
 }
 
@@ -177,7 +177,6 @@ a:visited {
 
 .orange {
 	background: #ff7518;
-
 }
 
 .blue {
@@ -198,8 +197,66 @@ background-color:#4ed9b1;
 
 .yellow {
   background-color: #ffe135;
-
 }
+
+/* transform */
+ 
+ .rotate0 {
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+	     -o-transform: rotate(0deg);
+}
+    
+.rotate45 {
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+}
+
+.rotate135 {
+    -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+}
+
+.rotate225 {
+   -webkit-transform: rotate(225deg);
+	  -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+	     -o-transform: rotate(225deg);
+}
+    
+.rotate270 {
+    -webkit-transform: rotate(270deg);
+	  -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+	     -o-transform: rotate(270deg);
+}
+
+.rotate315 {
+    -webkit-transform: rotate(315deg);
+	  -moz-transform: rotate(315deg);
+      -ms-transform: rotate(3150deg);
+	     -o-transform: rotate(315deg);
+}
+
 
 /* template/matching divs */
 
@@ -328,7 +385,6 @@ background-color:#4ed9b1;
   transform-origin: 6em 14em;
 }
 
-
 /* transform */
  
  .rotate0 {
@@ -379,67 +435,10 @@ background-color:#4ed9b1;
       -ms-transform: rotate(270deg);
 	     -o-transform: rotate(270deg);
 }
-  
 
 .rotate315 {
     -webkit-transform: rotate(315deg);
 	  -moz-transform: rotate(315deg);
       -ms-transform: rotate(3150deg);
 	     -o-transform: rotate(315deg);
-}
-
-.skew315 {
-    -webkit-transform: skew(315deg) !important;
-	   -moz-transform: skew(315deg)!important;
-       -ms-transform:  skew(315deg)!important;
-	       -o-transform: skew(315deg)!important;
-}
-
-.skew45 {
-    -webkit-transform: skew(45deg)!important;
-	  -moz-transform: skew(45deg)!important;
-      -ms-transform: skew(45deg)!important;
-	     -o-transform: skew(45deg)!important;
-}
-
-.parDown {
-    -webkit-transform: rotate(90deg) skew(315deg)!important;
-	  -moz-transform: rotate(90deg) skew(315deg)!important;
-      -ms-transform: rotate(90deg) skew(315deg)!important;
-	     -o-transform: rotate(9deg) skew(315deg)!important;
-}
-
-.parUp {
-    -webkit-transform: rotate(90deg) skew(45deg) !important;
-	   -moz-transform: rotate(90deg) skew(45deg) !important;
-       -ms-transform: rotate(90deg) skew(45deg) !important;
-	       -o-transform: rotate(90deg) skew(45deg) !important;
-}
-
-.par5 {
-    -webkit-transform: rotate(45deg) skew(315deg)!important;
-	  -moz-transform: rotate(45deg) skew(315deg)!important;
-      -ms-transform: rotate(45deg) skew(315deg)!important;
-	     -o-transform: rotate(45deg) skew(315deg)!important;
-}
-
-.par6 {
-    -webkit-transform: rotate(45deg) skew(45deg) !important;
-	   -moz-transform: rotate(45deg) skew(45deg) !important;
-       -ms-transform: rotate(45deg) skew(45deg) !important;
-	       -o-transform: rotate(45deg) skew(45deg) !important;
-}
-
-.par7 {
-    -webkit-transform: rotate(315deg) skew(315deg)!important;
-	  -moz-transform: rotate(315deg) skew(315deg)!important;
-      -ms-transform: rotate(315deg) skew(315deg)!important;
-	     -o-transform: rotate(315deg) skew(315deg)!important;
-}
-
-.par8 {
-    -webkit-transform: rotate(315deg) skew(45deg) !important;
-	   -moz-transform: rotate(315deg) skew(45deg) !important;
-       -ms-transform: rotate(315deg) skew(45deg) !important;
-	       -o-transform: rotate(315deg) skew(45deg) !important;
 }
