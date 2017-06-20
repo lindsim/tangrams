@@ -1,7 +1,8 @@
 $(function() {
 
+
   $(".shape").draggable({
-    containment: "#playSpace", 
+    containment: "document", 
     scroll: false
   });
   

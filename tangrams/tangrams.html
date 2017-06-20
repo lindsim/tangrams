@@ -9,8 +9,8 @@
     <script type="text/javascript" src="directions.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
-  <body class="centerWrap">
-    <header class="centerContent">
+  <body>
+    <header>
       <h1 class="rainbowBackText">Tangram</h1> 
       <div id="links">
         &#8594; <a id="directLink" class="rainbowBackText" href="#">Directions</a>
@@ -19,7 +19,7 @@
       </div>
       <nav class="rainbowBackText">
         Outline:
-        <a class="choices" id="0">blank</a>
+        <a class="choices active" id="0">blank</a>
         <a class="choices" id="1">1</a>
         <a class="choices" id="2">2</a>
         <a class="choices" id="3">3</a>
@@ -28,8 +28,7 @@
         <a class="choices" id="6">6</a>
       </nav>
     </header>
-    <section>
-      <div id="shapeTray">
+    <section id="shapeTray">
         <div class="shape tri sm purple"></div>
         <div class="shape tri sm pink" ></div> 
         <div class="shape square red"></div>
@@ -37,10 +36,8 @@
         <div class="shape tri md yellow"></div>
         <div class="shape tri lg green"></div>
         <div class="shape tri lg blue"></div>
-      </div>
     </section>
-    <main class="centerContent">
-      <div id="matchSpace">
+    <main id="matchSpace">
         <div id="directText">
         <p>The object of the puzzle is to fit all of the shape pieces
         into the outlined area such that no piece overlaps another or is outside of the outline.  
@@ -50,7 +47,7 @@
         <p>To move the shapes, click and drag the shape pieces with your mouse. 
         </p>
         <p>Use the left, right, up, and down arrow keys 
-          as well as the enter, shift, slash (/), and quotation mark (') keys to rotate and flip. 
+          as well as the enter, shift, slash (/), and quotation mark (') keys to flip or rotate and flip. 
           the shape pieces.  
         </p>
         </div>
@@ -61,7 +58,6 @@
         <div id="four" class="templates"></div>
         <div id="five" class="templates"></div>
         <div id="six" class="templates"></div>
-        </div>
-      </div>
+      </main>
     </body>
 </html>
