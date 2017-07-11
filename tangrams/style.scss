@@ -1,9 +1,11 @@
 //mixin
 
 
-//variables
+/* variables */
+
+/* colors */
 $red: #f53f00;
-$orange: 	#ff7518;
+$orange:#ff7518;
 $purple: #592da6;
 $gold: #ffe135;
 $green: #4ed9b1;
@@ -11,140 +13,438 @@ $blue: #2d61a6;
 $pink: #fc69b4;
 $gray: #4a5662;
 $white: #ffffff;
-$sqside: 5.6em;
+$black: #000000;
+$outline: 0.2em dashed black;
+
+/* dimensions */
+$lgTri: 8em;
+$medTri: 5.6em;
+$smTri: 4em;
+$trihyp: 16em;
+
 $scale: 1;
 
 
-// divs and shape class
-#playSpace {
-  background-color: $white;
-  height: 50em;
-  width: 50em;
-}
 
+/* divs */
 #matchSpace {
-  background-color: $gray;
-  height: 40em;
-  width: 40em;
+  display: inline-block;
+  top: 30%;
+  position: absolute;
+  left: 10%;
+  width: 30em;
+  height: 30em;
 }
 
 #shapeTray {
-  background-color: $blue;
-  height: 50em;
-  width: 16em;
+  height: 41em;
+  width: $trihyp + 1em;
+  left: $trihyp * 2 + 1em;
+  position: absolute;
 }
 
-.shape{
+#playSpace {
+  background-color: transparent;
+  position: absolute;
+  height: 42em;
+  width: 51em;
+}
+
+/* headings */
+
+h1 {
+  letter-spacing: 0.1em;
+  font-size: 6.5em;
+  margin: 0em;
+  padding: 0em;
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: transparent;
+  text-decoration: underline;
+
+
+}
+
+a:visited{
+  color: $black;
+  text-decoration: none;
+}
+
+/* elements */
+
+header {
+  position: absolute;
+  text-align: right;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Black Ops One', cursive;
+} 
+
+/* classes */
+.directions {
+  visibility: hidden;
+}
+
+.shape {
   opacity: 0.8;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  margin-right: 0.25em;
+  z-index: 2;
 }
 
+.rainbowBackText {
+  background-image: linear-gradient(to right, $purple, $pink, $red, $orange, $yellow, $green, $blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0.07em 0em 0em $black;
 
-#square {
-  width: $sqside; 
-  height: $sqside; 
-  background-color: $red;
-   right: 8%;
-   top: 32.6%;
-   position: absolute;
+}
+
+.rainbowBackground {
+  background-image: linear-gradient(to bottom, $purple, $pink, $red, $orange, $yellow, $green, $blue);
+  color: $black;
+}
+
+.pinkpurp {
+  background-image: linear-gradient(to bottom, $purple, $pink);
+}
+
+.bluegreen {
+  background-image: linear-gradient(to bottom, $green, $blue);
+}
+
+/* shape classes */
+
+.square {
+  width: $medTri; 
+  height: $medTri; 
+
   }
 
 
-#parallelo {
-	width: 8em;
-	height: 4em;
+.par {
+	width: $lgTri;
+	height: $smTri;
 	-webkit-transform: skew(45deg);
 	   -moz-transform: skew(45deg);
        -ms-transform: skew(45deg);
 	       -o-transform: skew(45deg);
+}
+
+.tri{
+	width: 0;
+	height: 0;
+}
+
+.lg {
+	border-right: $lgTri solid transparent;
+  border-left: $lgTri solid transparent;
+  }
+
+
+.sm {
+	border-right: $smTri solid transparent;
+  border-left: $smTri  solid transparent;
+}
+
+.md {
+	border-right: $medTri solid transparent;
+  border-left: $medTri solid transparent;
+}
+
+/* shape divs */
+
+
+
+#square {
+  margin-left: 5.2em;
+  background-color: $red;
+}
+
+#par {
 	background: $orange;
-  right: 38%;
-  bottom: 75%;
-  position: absolute;
+  margin-left: 4.5em;
 }
 
 #lgtri {
-	width: 0;
-	height: 0;
-	border-right: 8em solid transparent;
-  border-left: 8em solid transparent;
-	border-bottom: 8em solid $blue;
-  right: 0%;
-  top: 50%;
-  position: absolute;
-
+	border-bottom: $lgTri solid $blue;
+  margin-left: 1em;
+  background-clip:border;
 }
 
 
 #lgtri2 {
-  @extend #lgtri;
-  border-bottom: 8em solid $green;
-  right: 25%;
-  top: 25%;
-  position: absolute;
+  border-bottom: $lgTri solid $green;
+  margin-left: 1em;
 }
 
 #smtri {
-	width: 0;
-	height: 0;
-	border-right: 4em solid transparent;
-  border-left: 4em  solid transparent;
-	border-bottom: 4em  solid $purple;
-  left: 61.99%;
-  top: 61.99%;
-  position: absolute;
-
+	border-bottom: $smTri solid $purple;
+  margin-left: 4em;
 }
 
 #smtri2 {
-  @extend #smtri;
-  border-bottom: 4em solid $pink; 
-    left: 24.8%;
-    top: 25.19%;
-    position: absolute;
+  border-bottom: $smTri solid $pink;  
+  margin-left: 4em; 
 }
 
-#medtri {
-	width: 0;
-	height: 0;
-	border-right: $sqside solid transparent;
-  border-left: $sqside solid transparent;
-	border-bottom: $sqside solid $gold;
-  left: 51.9%;
-  bottom: 70.5%;
+#mdtri {
+	border-bottom: $medTri solid $yellow;
+  margin-left: 2.6em;
+}
+
+/* template/matching divs */
+
+#one {
+  width: $trihyp; 
+  height: $trihyp; 
+  border: $outline;
+}
+
+#two {
+  width: 11.3em;
+  height: 22.6em;
+  border: $outline;
+}
+
+#three {
+  width: 22.5em;
+  height: 22.5em;
+  border: $outline;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+  background: transparent;
+  transform-origin: 0 100%;
+
+}
+
+#three:after{
+  content: "";
+  width: 31.9em;
+  border-top: $outline;
   position: absolute;
-    
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 0;
+  }
+
+#four {
+  margin-top: 10em;
+	border-bottom: $outline;
+	border-left: $outline;
+	border-right: $outline;
+	height: $medTri;
+	width: 22.4em;
+  position: relative;
+  background: transparent;
+}
+	
+
+#four:after {
+  content: "";
+  width: 15.6em;
+  height: 15.6em;
+  border-top: $outline;
+  border-left: $outline;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 19.4em 7.6em;
+
+}
+
+#five {
+  border-left: $outline;
+	border-right: $outline;
+	height: 11.3em;
+	width: 22.6em;
+  position: relative;
+  background: transparent;
+
+}
+#five:after{
+  content: "";
+  border-bottom: $outline;
+	border-right: $outline;
+	height: $trihyp;
+	width: $trihyp;
+  position: absolute;
+  background: transparent;
+  transform-origin: 19.5em $lgTri;
+  transform: rotate(45deg);
+}
+
+#five:before{
+  content: "";
+  margin-top: 3.5em;
+  margin-left: 9.8em;
+  border-bottom: $outline;
+	border-right: $outline;
+	height: $trihyp;
+	width: $trihyp;
+  position: absolute;
+  background: transparent;
+  transform-origin: 5em 0em;
+  transform: rotate(45deg);
+}
+
+#six{
+  margin-left: 5em;
+  border-top: $outline;
+	border-left: $outline;
+	height: 11.2em;
+	width: 11.2em;
+  background: transparent;
+}
+
+#six:before {
+  content: "";
+	border-bottom: $outline;
+  border-right: $outline;
+	height: 11.2em;
+	width: 11.2em;
+  position: absolute;
+  background: transparent;
+  margin-left: 5.8em;
+  margin-top: 5.8em;
+}
+	
+#six:after{
+  content: "";
+  border-top: $outline;
+  border-bottom: $outline;
+	height: $trihyp;
+	width: 7.7em;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 6em 14em;
 }
 
 
-  
-//animation
+/* transform */
  
- .pointLeft {
-    -webkit-transform: rotate(-90deg);
-	  -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-	     -o-transform: rotate(-90deg);
+  .rotate0 {
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+	     -o-transform: rotate(0deg);
+    }
+    
+  .rotate45 {
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
     }
 
-    
-  .pointRight {
+    .rotate90 {
     -webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
 	     -o-transform: rotate(90deg);
     }
-  
-    .pointDown {
-    -webkit-transform: scale(1,-1);
-	  -moz-transform: scale(1,-1);
-      -ms-transform: scale(1,-1);
-	     -o-transform: scale(1, -1);
+
+    .rotate135 {
+    -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
     }
- 
-     .pointUp {
-    -webkit-transform: scale(-1,1);
-	  -moz-transform: scale(-1,1);
-      -ms-transform: scale(-1,1);
-	     -o-transform: scale(-1,1);
+
+    .rotate180 {
+    -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+    }
+
+    .rotate225 {
+   -webkit-transform: rotate(225deg);
+	  -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+	     -o-transform: rotate(225deg);
     }
     
+    .rotate270 {
+    -webkit-transform: rotate(270deg);
+	  -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+	     -o-transform: rotate(270deg);
+    }
+  
+
+    .rotate315 {
+    -webkit-transform: rotate(315deg);
+	  -moz-transform: rotate(315deg);
+      -ms-transform: rotate(3150deg);
+	     -o-transform: rotate(315deg);
+    }
+
+    .skew315 {
+    -webkit-transform: skew(315deg) !important;
+	   -moz-transform: skew(315deg)!important;
+       -ms-transform:  skew(315deg)!important;
+	       -o-transform: skew(315deg)!important;
+    }
+
+    .skew45 {
+    -webkit-transform: skew(45deg)!important;
+	  -moz-transform: skew(45deg)!important;
+      -ms-transform: skew(45deg)!important;
+	     -o-transform: skew(45deg)!important;
+    }
+
+    .parDown {
+    -webkit-transform: rotate(90deg) skew(315deg)!important;
+	  -moz-transform: rotate(90deg) skew(315deg)!important;
+      -ms-transform: rotate(90deg) skew(315deg)!important;
+	     -o-transform: rotate(9deg) skew(315deg)!important;
+    }
+
+    .parUp {
+    -webkit-transform: rotate(90deg) skew(45deg) !important;
+	   -moz-transform: rotate(90deg) skew(45deg) !important;
+       -ms-transform: rotate(90deg) skew(45deg) !important;
+	       -o-transform: rotate(90deg) skew(45deg) !important;
+    }
+
+    .par5 {
+    -webkit-transform: rotate(45deg) skew(315deg)!important;
+	  -moz-transform: rotate(45deg) skew(315deg)!important;
+      -ms-transform: rotate(45deg) skew(315deg)!important;
+	     -o-transform: rotate(45deg) skew(315deg)!important;
+    }
+
+    .par6 {
+    -webkit-transform: rotate(45deg) skew(45deg) !important;
+	   -moz-transform: rotate(45deg) skew(45deg) !important;
+       -ms-transform: rotate(45deg) skew(45deg) !important;
+	       -o-transform: rotate(45deg) skew(45deg) !important;
+    }
+
+    .par7 {
+    -webkit-transform: rotate(315deg) skew(315deg)!important;
+	  -moz-transform: rotate(315deg) skew(315deg)!important;
+      -ms-transform: rotate(315deg) skew(315deg)!important;
+	     -o-transform: rotate(315deg) skew(315deg)!important;
+    }
+
+    .par8 {
+    -webkit-transform: rotate(315deg) skew(45deg) !important;
+	   -moz-transform: rotate(315deg) skew(45deg) !important;
+       -ms-transform: rotate(315deg) skew(45deg) !important;
+	       -o-transform: rotate(315deg) skew(45deg) !important;
+    }
