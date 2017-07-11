@@ -1,0 +1,88 @@
+@import 'variables';
+
+/* shape classes */
+
+.shape {
+  opacity: 0.8;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  margin-right: 0.25em;
+  z-index: 2;
+}
+
+.square {
+    width: $medTri; 
+    height: $medTri; 
+
+}
+
+
+.par {
+	width: $lgTri;
+	height: $smTri;
+	-webkit-transform: skew(45deg);
+	   -moz-transform: skew(45deg);
+       -ms-transform: skew(45deg);
+	       -o-transform: skew(45deg);
+}
+
+.tri {
+	width: 0;
+	height: 0;
+}
+
+.lg {
+	border-right: $lgTri solid transparent;
+    border-left: $lgTri solid transparent;
+}
+
+
+.sm {
+	border-right: $smTri solid transparent;
+    border-left: $smTri  solid transparent;
+}
+
+.md {
+	border-right: $medTri solid transparent;
+    border-left: $medTri solid transparent;
+}
+
+
+
+/* shape divs */
+
+#square {
+    margin-left: $trihyp - ($medTri * 2);
+    background-color: $red;
+}
+
+#par {
+	background: $orange;
+    margin-left: 4.5em;
+}
+
+#lgtri {
+    border-bottom: $lgTri solid $blue;
+    margin-left: 1em;
+    background-clip:border;
+}
+
+#lgtri2 {
+    border-bottom: $lgTri solid $green;
+    margin-left: 1em;
+}
+
+#smtri {
+	border-bottom: $smTri solid $purple;
+    margin-left: 4em;
+}
+
+#smtri2 {
+    border-bottom: $smTri solid $pink;  
+    margin-left: 4em; 
+}
+
+#mdtri {
+	border-bottom: $medTri solid $yellow;
+    margin-left: 2.6em;
+}

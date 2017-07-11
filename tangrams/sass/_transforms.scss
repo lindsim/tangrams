@@ -1,0 +1,87 @@
+/* transform */
+ /* mixins */
+@mixin transformR($num) {
+	-webkit-transform: rotate($num);
+	   -moz-transform: rotate($num);
+       -ms-transform: rotate($num);
+	       -o-transform: rotate($num);
+}
+
+@mixin transformS($num) {
+	-webkit-transform: skew($num)!important;;
+	   -moz-transform: skew($num)!important;
+       -ms-transform: skew($num)!important;;
+	       -o-transform: skew($num)!important;;
+}
+
+@mixin transformRS($numR, $numS) {
+  -webkit-transform: rotate($numR) skew($numS)!important;
+	  -moz-transform: rotate($numR) skew($numS)!important;
+      -ms-transform: rotate($numR) skew($numS)!important;
+	      -o-transform: rotate($numR) skew($numS)!important;
+    }
+
+
+  .rotate0 {
+    @include transformR(0deg);
+  }
+    
+  .rotate45 {
+    @include transformR(45deg);
+  }
+
+  .rotate90 {
+   @include transformR(90deg);
+  }
+
+  .rotate135 {
+   @include transformR(135deg);
+  }
+
+  .rotate180 {
+   @include transformR(180deg);
+  }
+
+  .rotate225 {
+   @include transformR(225deg);
+  }
+    
+  .rotate270 {
+   @include transformR(225deg);
+  }
+
+  .rotate315 {
+   @include transformR(315deg);
+  }
+  
+  .skew315 {
+     @include transformS(315deg);
+  }
+
+  .skew45 {
+     @include transformS(315deg);
+  }
+
+  .parDown {
+    @include transformRS(90deg, 315deg);
+  }
+
+  .parUp {
+    @include transformRS(90deg, 45deg);
+  }
+
+  .par5 {
+     @include transformRS(45deg, 315deg);
+  }
+
+  .par6 {
+     @include transformRS(45deg, 45deg);
+  }
+
+  .par7 {
+     @include transformRS(315deg, 315deg);
+  }
+
+  .par8 {
+    @include transformRS(315deg, 45deg);
+  }
