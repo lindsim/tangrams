@@ -1,0 +1,128 @@
+/* template/matching divs */
+
+#one {
+    width: $trihyp; 
+    height: $trihyp; 
+    border: $outline;
+}
+
+#two {
+    width: 11.3em;
+    height: 22.6em;
+    border: $outline;
+}
+
+#three {
+    width: 22.5em;
+    height: 22.5em;
+    border: $outline;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    position: relative;
+    background: transparent;
+    transform-origin: 0 100%;
+
+}
+
+#three:after{
+    content: "";
+    width: 31.9em;
+    border-top: $outline;
+    position: absolute;
+    background: transparent;
+    transform: rotate(45deg);
+    transform-origin: 0;
+  }
+
+#four {
+    margin-top: 10em;
+	border-bottom: $outline;
+	border-left: $outline;
+	border-right: $outline;
+	height: $medTri;
+	width: 22.4em;
+    position: relative;
+    background: transparent;
+}
+	
+
+#four:after {
+    content: "";
+    width: 15.6em;
+    height: 15.6em;
+    border-top: $outline;
+    border-left: $outline;
+    position: absolute;
+    background: transparent;
+    transform: rotate(45deg);
+    transform-origin: 19.4em 7.6em;
+
+}
+
+#five {
+    border-left: $outline;
+    border-right: $outline;
+    height: 11.3em;
+    width: 22.6em;
+    position: relative;
+    background: transparent;
+
+}
+#five:after{
+    content: "";
+    border-bottom: $outline;
+	border-right: $outline;
+	height: $trihyp;
+	width: $trihyp;
+    position: absolute;
+    background: transparent;
+    transform-origin: 19.5em $lgTri;
+    transform: rotate(45deg);
+}
+
+#five:before{
+    content: "";
+    margin-top: 3.5em;
+    margin-left: 9.8em;
+    border-bottom: $outline;
+	border-right: $outline;
+	height: $trihyp;
+	width: $trihyp;
+    position: absolute;
+    background: transparent;
+    transform-origin: 5em 0em;
+    transform: rotate(45deg);
+}
+
+#six{
+    margin-left: 5em;
+    border-top: $outline;
+	border-left: $outline;
+	height: 11.2em;
+	width: 11.2em;
+    background: transparent;
+}
+
+#six:before {
+    content: "";
+	border-bottom: $outline;
+    border-right: $outline;
+	height: 11.2em;
+	width: 11.2em;
+    position: absolute;
+    background: transparent;
+    margin-left: 5.8em;
+    margin-top: 5.8em;
+}
+	
+#six:after{
+  content: "";
+  border-top: $outline;
+  border-bottom: $outline;
+	height: $trihyp;
+	width: 7.7em;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 6em 14em;
+}

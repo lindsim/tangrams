@@ -1,16 +1,11 @@
 # tangram
-
-Directions:<br>
-The object of the puzzle is to fit all of the shape pieces into the outlined shape (called templates in the code). 
-<p>Drag the shapes with your mouse. Rotate the square using the left and right arrow keys. Rotate the other shapes using the left, right, up, and down arrow keys and the enter, shift, slash (/), and quotation mark (') keys. </p>
-
-
 Note: <br>
 I made a tangram puzzle to get better at SCSS/CSS and Javascript/Jquery, and because I've been wanting to make this for a while. I intentionally limited myself to these technologies and HTML. <br>
 <br>
 To do:
-  <br>make 5 templates total
-  <br>make navigation to choose template
+  <br><s>make shapes using clip path</s>
+  <br><s>make 6 templates total</s>
+  <br><s>make navigation to choose template</s>
   <br>refactor the movement code so it is more natural (and uses arrow keys only)
 <br>
 <br>

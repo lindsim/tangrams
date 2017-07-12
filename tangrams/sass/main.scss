@@ -1,0 +1,105 @@
+/* import */
+@import 'variables';
+@import 'shapes';
+@import 'transforms';
+@import 'match';
+
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+
+/* main layout divs */
+#matchSpace {
+  display: inline-block;
+  top: 30%;
+  position: absolute;
+  left: 10%;
+  width: 30em;
+  height: 30em;
+}
+
+#shapeTray {
+  height: 41em;
+  width: $trihyp + 1em;
+  left: $trihyp * 2 + 1em;
+  position: absolute;
+}
+
+#playSpace {
+  background-color: transparent;
+  position: absolute;
+  height: 42em;
+  width: 51em;
+}
+
+/* headings */
+
+h1 {
+  letter-spacing: 0.1em;
+  font-size: 6.5em;
+  margin: 0em;
+  padding: 0em;
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: transparent;
+  text-decoration: underline;
+
+
+}
+
+a:visited{
+  color: $black;
+  text-decoration: none;
+}
+
+/* other elements */
+
+header {
+  position: absolute;
+  text-align: right;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Black Ops One', cursive;
+} 
+
+/* general classes */
+
+.directions {
+  visibility: hidden;
+}
+
+.rainbowBackText {
+  background-image: linear-gradient(to right, $purple, $pink, $red, $orange, $yellow, $green, $blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0.07em 0em 0em $black;
+
+}
+
+.rainbowBackground {
+  background-image: linear-gradient(to bottom, $purple, $pink, $red, $orange, $yellow, $green, $blue);
+  color: $black;
+}
+
+.pinkpurp {
+  background-image: linear-gradient(to bottom, $purple, $pink);
+}
+
+.bluegreen {
+  background-image: linear-gradient(to bottom, $green, $blue);
+}
+
+
+
+
+
+
