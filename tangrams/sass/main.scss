@@ -1,34 +1,42 @@
-/* import */
+/* import from partials*/
 @import 'variables';
 @import 'shapes';
 @import 'transforms';
 @import 'match';
 
+/* import from google fonts */
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
-
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
 
 /* main layout divs */
+#links {
+  float: right;
+}
+
 #matchSpace {
   display: inline-block;
-  top: 30%;
+  top: 10em;
   position: absolute;
-  left: 10%;
-  width: 30em;
-  height: 30em;
+  width: 36em;
+  height: 30em;  
+  overflow: auto;
 }
 
 #shapeTray {
-  height: 41em;
-  width: $trihyp + 1em;
-  left: $trihyp * 2 + 1em;
+  height: 43em;
+  width: 17em;
+  left: 36em;
   position: absolute;
 }
 
-#playSpace {
-  background-color: transparent;
-  position: absolute;
-  height: 42em;
-  width: 51em;
+#directText{
+  margin: auto;
+  background-color: #ffffff;
+  padding: 1em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  border: 0.15em solid #000000;
+  z-index: 4;
 }
 
 /* headings */
@@ -40,37 +48,70 @@ h1 {
   padding: 0em;
 }
 
-/* links */
+/* nav bar including links */
 
 a {
   text-decoration: none;
 }
 
 a:hover {
-  color: transparent;
-  text-decoration: underline;
-
-
+  color: #000000;
+  text-shadow: 0em 0em 1em #fc69b4;
 }
 
-a:visited{
-  color: $black;
+.choices {
+  padding: 0em 0.1em 0em 0.1em;
   text-decoration: none;
+}
+
+.active {
+  border: 0.1em dashed black;
+  border-radius: 0.4em;
+  text-shadow: none;
+}
+
+nav {
+  font-size: 1em;
 }
 
 /* other elements */
 
 header {
-  position: absolute;
-  text-align: right;
   z-index: 1;
+  max-width: 36em;
+  position: absolute;
 }
 
 body {
   font-family: 'Black Ops One', cursive;
+  background-color: transparent;
+  position: relative;
+  height: 44em;
+  width: 55em;
+  overflow: auto;
+  margin: 0 auto;
 } 
 
-/* general classes */
+ul {
+  padding: 0em;
+  margin: 0em;
+}
+
+/* layout classes */
+
+
+.centerContent{
+  position: relative;
+  left: -50%;
+}
+
+.centerWrap{
+   position: absolute;
+   left: 50%;
+}
+
+
+
 
 .directions {
   visibility: hidden;
@@ -90,13 +131,7 @@ body {
   color: $black;
 }
 
-.pinkpurp {
-  background-image: linear-gradient(to bottom, $purple, $pink);
-}
 
-.bluegreen {
-  background-image: linear-gradient(to bottom, $green, $blue);
-}
 
 
 

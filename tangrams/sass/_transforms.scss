@@ -7,20 +7,6 @@
 	       -o-transform: rotate($num);
 }
 
-@mixin transformS($num) {
-	-webkit-transform: skew($num)!important;;
-	   -moz-transform: skew($num)!important;
-       -ms-transform: skew($num)!important;;
-	       -o-transform: skew($num)!important;;
-}
-
-@mixin transformRS($numR, $numS) {
-  -webkit-transform: rotate($numR) skew($numS)!important;
-	  -moz-transform: rotate($numR) skew($numS)!important;
-      -ms-transform: rotate($numR) skew($numS)!important;
-	      -o-transform: rotate($numR) skew($numS)!important;
-    }
-
 
   .rotate0 {
     @include transformR(0deg);
@@ -54,34 +40,3 @@
    @include transformR(315deg);
   }
   
-  .skew315 {
-     @include transformS(315deg);
-  }
-
-  .skew45 {
-     @include transformS(315deg);
-  }
-
-  .parDown {
-    @include transformRS(90deg, 315deg);
-  }
-
-  .parUp {
-    @include transformRS(90deg, 45deg);
-  }
-
-  .par5 {
-     @include transformRS(45deg, 315deg);
-  }
-
-  .par6 {
-     @include transformRS(45deg, 45deg);
-  }
-
-  .par7 {
-     @include transformRS(315deg, 315deg);
-  }
-
-  .par8 {
-    @include transformRS(315deg, 45deg);
-  }

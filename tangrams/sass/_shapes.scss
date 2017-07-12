@@ -1,52 +1,87 @@
 @import 'variables';
 
 /* shape classes */
-
+//general
 .shape {
-  opacity: 0.8;
-  margin-bottom: 0.25em;
-  margin-top: 0.25em;
-  margin-right: 0.25em;
+  opacity: 1;
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.current {
+  opacity: 0.7 !important; 
+}
+
+//type
+.par {
+	width: 2 * $sqside;
+	height: $sqside;
+    clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+    margin-top: 0.25em;
 }
 
 .square {
-    width: $medTri; 
-    height: $medTri; 
+    width: $sqside;
+    height: $sqside;
+    margin-top: 0.25em;
 
-}
-
-
-.par {
-	width: $lgTri;
-	height: $smTri;
-	-webkit-transform: skew(45deg);
-	   -moz-transform: skew(45deg);
-       -ms-transform: skew(45deg);
-	       -o-transform: skew(45deg);
 }
 
 .tri {
-	width: 0;
-	height: 0;
+   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
 }
 
+//size for triangles
 .lg {
-	border-right: $lgTri solid transparent;
-    border-left: $lgTri solid transparent;
+  width: $lgTri;
+  height: $lgTri;
+  margin-top: -7.75em;
 }
 
 
 .sm {
-	border-right: $smTri solid transparent;
-    border-left: $smTri  solid transparent;
+  width: $smTri;
+  height: $smTri;
+  margin-top: -3.75em;
 }
 
 .md {
-	border-right: $medTri solid transparent;
-    border-left: $medTri solid transparent;
+  width: 2 * $sqside;
+  height: 2 * $sqside;
+  margin-top: -5.35em;
 }
 
+/* color classes*/
+
+.red {
+  background-color: $red;
+}
+
+.orange {
+	background: $orange;
+}
+
+.blue {
+	background-color: $blue;
+}
+
+.green {
+background-color: $green;
+}
+
+.purple {
+	background-color: $purple;
+}
+
+.pink {
+  background-color: $pink;  
+}
+
+.yellow {
+  background-color: $yellow;
+}
 
 
 /* shape divs */
