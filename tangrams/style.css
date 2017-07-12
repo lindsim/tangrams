@@ -281,14 +281,14 @@ background-color:#4ed9b1;
 }
 
 #two {
-  width: 11.3em;
-  height: 22.63em;
+  width: 11.2em;
+  height: 22.4em;
   border: 0.2em dashed #000000;
 }
 
 #three {
-  width: 22.63em;
-  height: 22.63em;
+  width: 22.6em;
+  height: 22.6em;
   border: 0.2em dashed #000000;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -313,7 +313,7 @@ background-color:#4ed9b1;
 	border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
 	height: 5.6em;
-	width: 22.63em;
+	width: 22.6em;
   position: relative;
   background: transparent;
 }
@@ -334,7 +334,7 @@ background-color:#4ed9b1;
 #five {
   border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
-	height: 11.3em;
+	height: 11.2em;
 	width: 22.6em;
   position: relative;
   background: transparent;

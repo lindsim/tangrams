@@ -80,7 +80,7 @@ $(function() {
        		  break;
 
             case 32:
-              currentShape.removeClass(degClasses).removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*7)]).addClass(degArray[currentIndex]);
+              currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*7)]);
              
         	default: return; // exit this handler for other keys
     	  }

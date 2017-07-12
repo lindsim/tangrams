@@ -16,14 +16,14 @@
 }
 
 #two {
-  width: 11.3em;
-  height: 22.63em;
+  width: $mdTri;
+  height: 22.6em;
   border: $outline;
 }
 
 #three {
-  width: 22.63em;
-  height: 22.63em;
+  width: 22.6em;
+  height: 22.6em;
   border: $outline;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -48,7 +48,7 @@
   border-left: $outline;
   border-right: $outline;
   height: $sqside;
-  width: 22.63em;
+  width: 22.6em;
   position: relative;
   background: transparent;
 }
@@ -69,7 +69,7 @@
 #five {
   border-left: $outline;
   border-right: $outline;
-  height: 11.3em;
+  height: $mdTri;
   width: 22.6em;
   position: relative;
   background: transparent;
