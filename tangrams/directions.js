@@ -11,11 +11,9 @@ $(function() {
   })
 
   $("#directLink").hover(function(){
-    $(".templates").hide();
     $("#directText").show();
   }, function(){
     $("#directText").hide();
-    currentTemplate.show();
   })
 
   $(".choices").click(function() {

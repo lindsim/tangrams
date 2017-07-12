@@ -32,8 +32,10 @@
   font-family: 'Oswald', sans-serif;
   font-size: 0.9em;
   border: 0.15em solid #000000;
-  z-index: 4;
+  z-index: 4 !important;
+  position: absolute;
 }
+
 
 /* other elements */ 
 
@@ -86,6 +88,7 @@ a:hover {
   color: #000000;
   text-shadow: 0em 0em 1em #fc69b4;
 }
+
 
 /* classes */
 
@@ -395,60 +398,3 @@ background-color:#4ed9b1;
   transform-origin: 6em 14em;
 }
 
-/* transform */
- 
- .rotate0 {
-    -webkit-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-      -ms-transform:rotate(0deg);
-	     -o-transform: rotate(0deg);
-}
-    
-.rotate45 {
-    -webkit-transform: rotate(45deg);
-	  -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-	     -o-transform: rotate(45deg);
-}
-
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-	  -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
-}
-
-.rotate135 {
-    -webkit-transform: rotate(135deg);
-	  -moz-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-	     -o-transform: rotate(135deg);
-}
-
-.rotate180 {
-    -webkit-transform: rotate(180deg);
-	  -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-	     -o-transform: rotate(180deg);
-}
-
-.rotate225 {
-   -webkit-transform: rotate(225deg);
-	  -moz-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-	     -o-transform: rotate(225deg);
-}
-    
-.rotate270 {
-    -webkit-transform: rotate(270deg);
-	  -moz-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-	     -o-transform: rotate(270deg);
-}
-
-.rotate315 {
-    -webkit-transform: rotate(315deg);
-	  -moz-transform: rotate(315deg);
-      -ms-transform: rotate(3150deg);
-	     -o-transform: rotate(315deg);
-}
