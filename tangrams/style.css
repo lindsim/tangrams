@@ -33,6 +33,14 @@
   font-size: 0.9em;
   border: 0.15em solid #000000;
   z-index: 4 !important;
+}
+
+/* elements */ 
+
+
+header {
+  z-index: 1;
+  max-width: 36em;
   position: absolute;
 }
 
@@ -46,7 +54,6 @@ header {
   position: absolute;
 }
 
-
 body {
   font-family: 'Black Ops One', cursive;
   background-color: transparent;
@@ -56,11 +63,6 @@ body {
   overflow: auto;
   margin: 0 auto;
 }
-
-section {
-
-}
-
 
 nav {
   font-size: 1em;
@@ -183,7 +185,7 @@ a:hover {
   margin-top: -5.35em;
 }
 
-/* color*/
+/* background color classes */
 
 .red {
   background-color: #f53f00;
@@ -198,7 +200,7 @@ a:hover {
 }
 
 .green {
-background-color:#4ed9b1;
+  background-color:#4ed9b1;
 }
 
 .purple {

@@ -11,7 +11,6 @@ $(function() {
 
 
 	$(".shape").mouseover(function(event) {
-    //console.log((event.pageX, event.pageY).getAttr;
     previousShape = currentShape;
   	currentShape = $(this);
     $(this).addClass("current");
@@ -25,7 +24,6 @@ $(function() {
   var colorClasses = "pink purple blue green yellow orange red";
   var colorArray = ["pink","purple", "blue", "green", "yellow", "orange", "red"];
 
-  //this code needs to be refactored; there must be a better way to do this
 
   $(document).keydown(function(e) {
     if (currentShape) {
@@ -37,7 +35,7 @@ $(function() {
             break;
           }
         }
-
+      
        switch(e.which) {
   
           //left arrow
@@ -58,10 +56,12 @@ $(function() {
             }
        		  break;
 
+
           //up arrow
         	case 38:
-          //should I implement this for triangles and simplify the square and parallelogram since they don't change if they flip?
-          //or should Iimplement the +2 -2 for the down arrow
+          //should I implement this for triangles and simplify the square and parallelogram 
+          //since they don't change if they flip?
+          //or should use the +2 -2 for the down arrow?
             //if (currentIndex % 2 === 0){
               if (currentIndex < 4){
                 currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 4]);
