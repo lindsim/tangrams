@@ -6,7 +6,7 @@ To do:
   <br><s>make shapes using clip path</s>
   <br><s>make 6 templates total</s>
   <br><s>make navigation to choose template</s>
-  <br><s>refactor the movement code so it is more natural (and uses arrow keys only)<s>
+  <br><s>refactor the movement code so it is more natural (and uses arrow keys only)</s>
   <br>add some fun thngs
 <br>
 <br>
