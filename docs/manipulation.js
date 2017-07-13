@@ -21,8 +21,8 @@ $(function() {
 
   var degClasses = "rotate0 rotate45 rotate90 rotate135 rotate180 rotate225 rotate270 rotate315";
   var degArray = ["rotate0", "rotate45", "rotate90", "rotate135", "rotate180", "rotate225", "rotate270", "rotate315"];
-  var colorClasses = "pink purple blue green yellow orange red";
-  var colorArray = ["pink","purple", "blue", "green", "yellow", "orange", "red"];
+  var colorClasses = "pink purple blue green yellow orange red black rainbowBackground warmColors coolColors";
+  var colorArray = ["pink","purple", "blue", "green", "yellow", "orange", "red", "black", "rainbowBackground", "warmColors", "coolColors"];
 
 
   $(document).keydown(function(e) {
@@ -77,8 +77,14 @@ $(function() {
        		  break;
 
             case 32:
-              currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*7)]);
-             
+              currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*11)]);
+            break; 
+
+            case 48:
+            $("body").addClass("rainbowBody");
+              
+            break;
+
         	default: return; // exit this handler for other keys
     	  }
       }
