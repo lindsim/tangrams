@@ -59,24 +59,21 @@ $(function() {
 
           //up arrow
         	case 38:
-          //should I implement this for triangles and simplify the square and parallelogram 
-          //since they don't change if they flip?
-          //or should use the +2 -2 for the down arrow?
-            //if (currentIndex % 2 === 0){
+            if (currentIndex % 2 === 0){
               if (currentIndex < 4){
                 currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 4]);
               } else {
                 currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 4]);
               }
-           // } else {
-            //  if (currentIndex === 1 || currentIndex === 5 ){
-             //   currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 2]);
-               // console.log(currentIndex);
-             // } else {
-               // currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 2]);
-                //console.log(currentIndex);
-             // }
-            //}
+            } else {
+              if (currentIndex === 1 || currentIndex === 5){
+                currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 2]);
+              } else if (currentIndex === 3 || currentIndex === 7){
+                currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 2]);
+              } else {
+                currentShape.addClass(degArray[4]);
+              }
+            }
        		  break;
 
             case 32:
