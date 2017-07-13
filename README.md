@@ -10,6 +10,8 @@ To do:
   <br><s>make navigation to choose template</s>
   <br><s>refactor the movement code so it is more natural (and uses arrow keys only)</s>
   <br><s>add some fun things</s>
+  <br>refactor js code one more time<br>
+  <br>get a code review from someone<br>
 <br>
 <br>
 Maybe one day:
