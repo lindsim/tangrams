@@ -36,15 +36,6 @@
   position: absolute;
 }
 
-/* elements */ 
-
-
-header {
-  z-index: 1;
-  max-width: 36em;
-  position: absolute;
-}
-
 
 /* other elements */ 
 
@@ -142,11 +133,8 @@ a:hover {
   text-shadow: 0.07em 0em 0em #000000;
 }
 
-.rainbowBackground {
-  background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
-  text-shadow: none;
-  color:#000000;
-}
+
+
 
 /* shape classes */
 
@@ -188,6 +176,26 @@ a:hover {
 
 /* background color classes */
 
+.coolColors {
+  background-image: linear-gradient(to right, #592da6, #2d61a6, #4ed9b1);
+  text-shadow: none;
+}
+
+.warmColors {
+  background-image: linear-gradient(to right, #fc69b4, #f53f00, #ffe135, #ff7518);
+  text-shadow: none;
+}
+
+.rainbowBackground {
+  background-image: linear-gradient(to left, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  text-shadow: none;
+}
+
+.rainbowBody {
+  background-image: linear-gradient(to top, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  text-shadow: none;
+}
+
 .red {
   background-color: #f53f00;
 }
@@ -215,6 +223,11 @@ a:hover {
 .yellow {
   background-color: #ffe135;
 }
+
+.black {
+  background-color: #000000;
+}
+
 
 /* transform */
  
