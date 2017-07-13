@@ -33,6 +33,7 @@
   font-size: 0.9em;
   border: 0.15em solid #000000;
   z-index: 4 !important;
+  position: absolute;
 }
 
 /* elements */ 
