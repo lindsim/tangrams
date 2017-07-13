@@ -23,8 +23,6 @@ $(function() {
   var degArray = ["rotate0", "rotate45", "rotate90", "rotate135", "rotate180", "rotate225", "rotate270", "rotate315"];
   var colorClasses = "pink purple blue green yellow orange red black rainbowBackground warmColors coolColors";
   var colorArray = ["pink","purple", "blue", "green", "yellow", "orange", "red", "black", "rainbowBackground", "warmColors", "coolColors"];
-
-
   $(document).keydown(function(e) {
     if (currentShape) {
         var currentClasses = currentShape.prop("classList");
@@ -37,7 +35,16 @@ $(function() {
         }
       
        switch(e.which) {
-  
+          //space bar  
+          case 32:
+            currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*11)]);
+          break; 
+
+          //zero
+          case 48:
+            $("body").addClass("rainbowBody");
+          break;
+          
           //left arrow
         	case 37:    
             if (currentIndex > 0){
@@ -56,38 +63,41 @@ $(function() {
             }
        		  break;
 
-
           //up arrow
-        	case 38:
-            if (currentIndex % 2 === 0){
-              if (currentIndex < 4){
-                currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 4]);
+          case 38:
+            console.log(currentIndex);
+            if (currentShape.hasClass("clip0") || currentShape.hasClass("clip1")){
+              if (currentIndex % 2 === 1) {
               } else {
-                currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 4]);
+                  if (currentShape.hasClass("clip0")){
+                    currentShape.removeClass("clip0").addClass("clip1");
+                  } else{
+                    currentShape.removeClass("clip1").addClass("clip0");
+                  }
               }
+
+              console.log(currentIndex);
             } else {
-              if (currentIndex === 1 || currentIndex === 5){
-                currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 2]);
-              } else if (currentIndex === 3 || currentIndex === 7){
-                currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 2]);
+              if (currentIndex % 2 === 0){
+                if (currentIndex < 4){
+                  currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 4]);
+                } else {
+                  currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 4]);
+                }
               } else {
-                currentShape.addClass(degArray[4]);
+                if (currentIndex === 1 || currentIndex === 5){
+                   currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 2]);
+                } else if (currentIndex === 3 || currentIndex === 7){
+                    currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 2]);
+                } else {
+                    currentShape.addClass(degArray[4]);
+                }
               }
             }
-       		  break;
-
-            case 32:
-              currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*11)]);
             break; 
-
-            case 48:
-            $("body").addClass("rainbowBody");
-              
-            break;
-
-        	default: return; // exit this handler for other keys
-    	  }
+        default: return; // exit this handler for other keys
       }
+    }
     e.preventDefault(); // prevent the default action from arrow keys
   })
 })

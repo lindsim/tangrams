@@ -151,9 +151,30 @@ a:hover {
 .par {
 	width: 11.2em;
 	height: 5.6em;
-  clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0 100%);
+  
+  
   margin-top: 0.25em;
 }
+
+.clip0{
+  clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.clip1
+{
+  clip-path: polygon(100% 100%, 50% 0, 0 0, 50% 100%)
+}
+
+.clip3
+{
+  clip-path: polygon(50% 0, 0 0, 50% 100%, 100% 100%);
+}
+
+.clip4
+{
+  clip-path: polygon(100% 0, 50% 0, 0 100%, 50% 0);
+}
+
 
 .lg {
   width: 16em;
