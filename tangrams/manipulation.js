@@ -11,7 +11,6 @@ $(function() {
 
 
 	$(".shape").mouseover(function(event) {
-    //console.log((event.pageX, event.pageY).getAttr;
     previousShape = currentShape;
   	currentShape = $(this);
     $(this).addClass("current");
@@ -21,49 +20,71 @@ $(function() {
   })
 
   var degClasses = "rotate0 rotate45 rotate90 rotate135 rotate180 rotate225 rotate270 rotate315";
+  var degArray = ["rotate0", "rotate45", "rotate90", "rotate135", "rotate180", "rotate225", "rotate270", "rotate315"];
+  var colorClasses = "pink purple blue green yellow orange red";
+  var colorArray = ["pink","purple", "blue", "green", "yellow", "orange", "red"];
 
-  //this code needs to be refactored; there must be a better way to do this
 
-	$(document).keydown(function(e) {
-  	if (currentShape)  {
+  $(document).keydown(function(e) {
+    if (currentShape) {
+        var currentClasses = currentShape.prop("classList");
 
+        for (var x = 0; x < degArray.length; x++){
+          if (degArray[x] === currentClasses[currentClasses.length - 1]) {
+            var currentIndex = x;
+            break;
+          }
+        }
+      
        switch(e.which) {
+  
           //left arrow
         	case 37:    
-            currentShape.removeClass(degClasses).addClass("rotate270")
-					  break;
-          //up arrow
-        	case 38: 
-            currentShape.removeClass(degClasses).addClass("rotate0")
-        	  break;
+            if (currentIndex > 0){
+              currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 1]);
+            } else {
+              currentShape.removeClass(degClasses).addClass(degArray[7]);
+            }
+       		  break;
+
           //right arrow  
         	case 39:
-            currentShape.removeClass(degClasses).addClass("rotate90")
+            if (currentIndex < 7){
+              currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 1]);
+            } else {
+              currentShape.removeClass(degClasses).addClass(degArray[0]);
+            }
        		  break;
-          //down arrow
-          case 40: 
-            currentShape.removeClass(degClasses).addClass("rotate180")
-        	  break;
-          //forward slash
-           case 191:
-            currentShape.removeClass(degClasses).addClass("rotate225")
-        	  break;
-          //enter
-           case 13:
-            currentShape.removeClass(degClasses).addClass("rotate45")
-        	  break;
-           //shift
-           case 16:
-            currentShape.removeClass(degClasses).addClass("rotate135")
-        	  break;
-           //single quote
-           case 222: 
-            currentShape.removeClass(degClasses).addClass("rotate315")
-        	  break;
 
+
+          //up arrow
+        	case 38:
+          //should I implement this for triangles and simplify the square and parallelogram 
+          //since they don't change if they flip?
+          //or should use the +2 -2 for the down arrow?
+            //if (currentIndex % 2 === 0){
+              if (currentIndex < 4){
+                currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 4]);
+              } else {
+                currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 4]);
+              }
+           // } else {
+            //  if (currentIndex === 1 || currentIndex === 5 ){
+             //   currentShape.removeClass(degClasses).addClass(degArray[currentIndex + 2]);
+               // console.log(currentIndex);
+             // } else {
+               // currentShape.removeClass(degClasses).addClass(degArray[currentIndex - 2]);
+                //console.log(currentIndex);
+             // }
+            //}
+       		  break;
+
+            case 32:
+              currentShape.removeClass(colorClasses).addClass(colorArray[Math.floor(Math.random()*7)]);
+             
         	default: return; // exit this handler for other keys
-    	}
-    }
+    	  }
+      }
     e.preventDefault(); // prevent the default action from arrow keys
-  });
-});
+  })
+})

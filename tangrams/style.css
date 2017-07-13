@@ -32,7 +32,7 @@
   font-family: 'Oswald', sans-serif;
   font-size: 0.9em;
   border: 0.15em solid #000000;
-  z-index: 4;
+  z-index: 4 !important;
 }
 
 /* elements */ 
@@ -45,6 +45,15 @@ header {
 }
 
 
+/* other elements */ 
+
+
+header {
+  z-index: 1;
+  max-width: 36em;
+  position: absolute;
+}
+
 body {
   font-family: 'Black Ops One', cursive;
   background-color: transparent;
@@ -54,11 +63,6 @@ body {
   overflow: auto;
   margin: 0 auto;
 }
-
-section {
-
-}
-
 
 nav {
   font-size: 1em;
@@ -86,6 +90,7 @@ a:hover {
   color: #000000;
   text-shadow: 0em 0em 1em #fc69b4;
 }
+
 
 /* classes */
 
@@ -180,7 +185,7 @@ a:hover {
   margin-top: -5.35em;
 }
 
-/* shape divs */
+/* background color classes */
 
 .red {
   background-color: #f53f00;
@@ -195,7 +200,7 @@ a:hover {
 }
 
 .green {
-background-color:#4ed9b1;
+  background-color:#4ed9b1;
 }
 
 .purple {
@@ -278,14 +283,14 @@ background-color:#4ed9b1;
 }
 
 #two {
-  width: 11.3em;
-  height: 22.63em;
+  width: 11.2em;
+  height: 22.4em;
   border: 0.2em dashed #000000;
 }
 
 #three {
-  width: 22.63em;
-  height: 22.63em;
+  width: 22.6em;
+  height: 22.6em;
   border: 0.2em dashed #000000;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -310,7 +315,7 @@ background-color:#4ed9b1;
 	border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
 	height: 5.6em;
-	width: 22.63em;
+	width: 22.6em;
   position: relative;
   background: transparent;
 }
@@ -331,7 +336,7 @@ background-color:#4ed9b1;
 #five {
   border-left: 0.2em dashed #000000;
 	border-right: 0.2em dashed #000000;
-	height: 11.3em;
+	height: 11.2em;
 	width: 22.6em;
   position: relative;
   background: transparent;
@@ -395,60 +400,3 @@ background-color:#4ed9b1;
   transform-origin: 6em 14em;
 }
 
-/* transform */
- 
- .rotate0 {
-    -webkit-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-      -ms-transform:rotate(0deg);
-	     -o-transform: rotate(0deg);
-}
-    
-.rotate45 {
-    -webkit-transform: rotate(45deg);
-	  -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-	     -o-transform: rotate(45deg);
-}
-
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-	  -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
-}
-
-.rotate135 {
-    -webkit-transform: rotate(135deg);
-	  -moz-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-	     -o-transform: rotate(135deg);
-}
-
-.rotate180 {
-    -webkit-transform: rotate(180deg);
-	  -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-	     -o-transform: rotate(180deg);
-}
-
-.rotate225 {
-   -webkit-transform: rotate(225deg);
-	  -moz-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-	     -o-transform: rotate(225deg);
-}
-    
-.rotate270 {
-    -webkit-transform: rotate(270deg);
-	  -moz-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-	     -o-transform: rotate(270deg);
-}
-
-.rotate315 {
-    -webkit-transform: rotate(315deg);
-	  -moz-transform: rotate(315deg);
-      -ms-transform: rotate(3150deg);
-	     -o-transform: rotate(315deg);
-}

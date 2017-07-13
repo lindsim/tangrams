@@ -1,0 +1,123 @@
+@import 'variables';
+
+/* shape classes */
+//general
+.shape {
+  opacity: 1;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.current {
+  opacity: 0.7 !important; 
+}
+
+//type
+.par {
+	width: 2 * $sqside;
+	height: $sqside;
+    clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+    margin-top: 0.25em;
+}
+
+.square {
+    width: $sqside;
+    height: $sqside;
+    margin-top: 0.25em;
+
+}
+
+.tri {
+   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+}
+
+//size for triangles
+.lg {
+  width: $lgTri;
+  height: $lgTri;
+  margin-top: -7.75em;
+}
+
+
+.sm {
+  width: $smTri;
+  height: $smTri;
+  margin-top: -3.75em;
+}
+
+.md {
+  width: 2 * $sqside;
+  height: 2 * $sqside;
+  margin-top: -5.35em;
+}
+
+/* color classes*/
+
+.red {
+  background-color: $red;
+}
+
+.orange {
+	background: $orange;
+}
+
+.blue {
+	background-color: $blue;
+}
+
+.green {
+background-color: $green;
+}
+
+.purple {
+	background-color: $purple;
+}
+
+.pink {
+  background-color: $pink;  
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+
+/* shape divs */
+
+#square {
+    margin-left: $trihyp - ($medTri * 2);
+    background-color: $red;
+}
+
+#par {
+	background: $orange;
+    margin-left: 4.5em;
+}
+
+#lgtri {
+    border-bottom: $lgTri solid $blue;
+    margin-left: 1em;
+    background-clip:border;
+}
+
+#lgtri2 {
+    border-bottom: $lgTri solid $green;
+    margin-left: 1em;
+}
+
+#smtri {
+	border-bottom: $smTri solid $purple;
+    margin-left: 4em;
+}
+
+#smtri2 {
+    border-bottom: $smTri solid $pink;  
+    margin-left: 4em; 
+}
+
+#mdtri {
+	border-bottom: $medTri solid $yellow;
+    margin-left: 2.6em;
+}

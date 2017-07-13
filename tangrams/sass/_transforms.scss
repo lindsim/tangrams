@@ -1,0 +1,42 @@
+/* transform */
+ /* mixins */
+@mixin transformR($num) {
+	-webkit-transform: rotate($num);
+	   -moz-transform: rotate($num);
+       -ms-transform: rotate($num);
+	       -o-transform: rotate($num);
+}
+
+
+  .rotate0 {
+    @include transformR(0deg);
+  }
+    
+  .rotate45 {
+    @include transformR(45deg);
+  }
+
+  .rotate90 {
+   @include transformR(90deg);
+  }
+
+  .rotate135 {
+   @include transformR(135deg);
+  }
+
+  .rotate180 {
+   @include transformR(180deg);
+  }
+
+  .rotate225 {
+   @include transformR(225deg);
+  }
+    
+  .rotate270 {
+   @include transformR(225deg);
+  }
+
+  .rotate315 {
+   @include transformR(315deg);
+  }
+  
