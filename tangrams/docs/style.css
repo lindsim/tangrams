@@ -1,0 +1,402 @@
+/* import */
+
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
+
+/* divs */
+
+#links {
+  float: right;
+}
+
+#matchSpace {
+  display: inline-block;
+  top: 10em;
+  position: absolute;
+  width: 36em;
+  height: 30em;  
+  overflow: auto;
+}
+
+#shapeTray {
+  height: 43em;
+  width: 17em;
+  left: 36em;
+  position: absolute;
+}
+
+#directText{
+  margin: auto;
+  background-color: #ffffff;
+  padding: 1em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  border: 0.15em solid #000000;
+  z-index: 4 !important;
+}
+
+/* elements */ 
+
+
+header {
+  z-index: 1;
+  max-width: 36em;
+  position: absolute;
+}
+
+
+/* other elements */ 
+
+
+header {
+  z-index: 1;
+  max-width: 36em;
+  position: absolute;
+}
+
+body {
+  font-family: 'Black Ops One', cursive;
+  background-color: transparent;
+  position: relative;
+  height: 44em;
+  width: 55em;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 1em;
+}
+ul {
+  padding: 0em;
+  margin: 0em;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  font-size: 6.5em;
+  margin: 0em;
+  padding: 0em;
+}
+
+
+/* links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-shadow: 0em 0em 1em #fc69b4;
+}
+
+
+/* classes */
+
+.templates{
+  margin-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centerContent{
+  position: relative;
+  left: -50%;
+}
+
+.centerWrap{
+   position: absolute;
+   left: 50%;
+}
+
+.current {
+  opacity: 0.7 !important; 
+}
+
+.choices {
+  padding: 0em 0.1em 0em 0.1em;
+  text-decoration: none;
+}
+
+.shape {
+  opacity: 1;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.active {
+  border: 0.1em dashed black;
+  border-radius: 0.4em;
+  text-shadow: none;
+}
+
+.rainbowBackText {
+  background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0.07em 0em 0em #000000;
+}
+
+.rainbowBackground {
+  background-image: linear-gradient(to right, #592da6, #fc69b4, #f53f00, #ff7518, #ffe135, #4ed9b1, #2d61a6);
+  text-shadow: none;
+  color:#000000;
+}
+
+/* shape classes */
+
+.tri {
+   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+}
+
+.square {
+  width: 5.6em; 
+  height: 5.6em;
+  margin-top: 0.25em; 
+  }
+
+.par {
+	width: 11.2em;
+	height: 5.6em;
+  clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0 100%);
+  margin-top: 0.25em;
+}
+
+.lg {
+  width: 16em;
+  height: 16em;
+  margin-top: -7.75em;
+}
+
+
+.sm {
+  width: 8em;
+  height: 8em;
+  margin-top: -3.75em;
+}
+
+.md {
+  width: 11.2em;
+  height: 11.2em;
+  margin-top: -5.35em;
+}
+
+/* background color classes */
+
+.red {
+  background-color: #f53f00;
+}
+
+.orange {
+	background: #ff7518;
+}
+
+.blue {
+	background-color: #2d61a6;
+}
+
+.green {
+  background-color:#4ed9b1;
+}
+
+.purple {
+	background-color: #592da6;
+}
+
+.pink {
+  background-color: #fc69b4;  
+}
+
+.yellow {
+  background-color: #ffe135;
+}
+
+/* transform */
+ 
+ .rotate0 {
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+	     -o-transform: rotate(0deg);
+}
+    
+.rotate45 {
+    -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+}
+
+.rotate135 {
+    -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+}
+
+.rotate225 {
+   -webkit-transform: rotate(225deg);
+	  -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+	     -o-transform: rotate(225deg);
+}
+    
+.rotate270 {
+    -webkit-transform: rotate(270deg);
+	  -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+	     -o-transform: rotate(270deg);
+}
+
+.rotate315 {
+    -webkit-transform: rotate(315deg);
+	  -moz-transform: rotate(315deg);
+      -ms-transform: rotate(3150deg);
+	     -o-transform: rotate(315deg);
+}
+
+
+/* template/matching divs */
+
+#one {
+  width: 16em; 
+  height: 16em; 
+  border: 0.2em dashed #000000;
+}
+
+#two {
+  width: 11.2em;
+  height: 22.4em;
+  border: 0.2em dashed #000000;
+}
+
+#three {
+  width: 22.6em;
+  height: 22.6em;
+  border: 0.2em dashed #000000;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+  background: transparent;
+  transform-origin: 0 100%;
+}
+
+#three:after {
+  content: "";
+  width: 31.9em;
+  border-top: 0.2em dashed #000000;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 0;
+}
+
+#four {
+  margin-top: 15em;
+	border-bottom: 0.2em dashed #000000;
+	border-left: 0.2em dashed #000000;
+	border-right: 0.2em dashed #000000;
+	height: 5.6em;
+	width: 22.6em;
+  position: relative;
+  background: transparent;
+}
+	
+
+#four:after {
+  content: "";
+  width: 16em;
+  height: 16em;
+  border-top: 0.2em dashed #000000;
+  border-left: 0.2em dashed #000000;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 19.8em 7.7em;
+}
+
+#five {
+  border-left: 0.2em dashed #000000;
+	border-right: 0.2em dashed #000000;
+	height: 11.2em;
+	width: 22.6em;
+  position: relative;
+  background: transparent;
+}
+
+#five:after {
+  content: "";
+  border-bottom: 0.2em dashed #000000;
+	border-right: 0.2em dashed #000000;
+	height: 16em;
+	width: 16em;
+  position: absolute;
+  background: transparent;
+  transform-origin: 19.5em 8em;
+  transform: rotate(45deg);
+}
+
+#five:before {
+  content: "";
+  margin-top: 3.5em;
+  margin-left: 9.8em;
+  border-bottom: 0.2em dashed #000000;
+	border-right: 0.2em dashed #000000;
+	height: 16em;
+	width: 16em;
+  position: absolute;
+  background: transparent;
+  transform-origin: 5em 0em;
+  transform: rotate(45deg);
+}
+
+#six {
+  border-top: 0.2em dashed #000000;
+	border-left: 0.2em dashed #000000;
+	height: 11.2em;
+	width: 11.2em;
+  background: transparent;
+}
+
+#six:before {
+  content: "";
+	border-bottom: 0.2em dashed #000000;
+  border-right: 0.2em dashed #000000;
+	height: 11.2em;
+	width: 11.2em;
+  position: absolute;
+  background: transparent;
+  margin-left: 5.8em;
+  margin-top: 5.8em;
+}
+	
+#six:after {
+  content: "";
+  border-top: 0.2em dashed #000000;
+  border-bottom: 0.2em dashed #000000;
+	height: 16em;
+	width: 7.7em;
+  position: absolute;
+  background: transparent;
+  transform: rotate(45deg);
+  transform-origin: 6em 14em;
+}
+

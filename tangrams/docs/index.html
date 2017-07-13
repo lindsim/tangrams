@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tangram</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="manipulation.js"></script>
+    <script type="text/javascript" src="directions.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class="rainbowBackText">Tangram</h1> 
+      <div id="links">
+        &#8594; <a id="directLink" class="rainbowBackText" href="#">Directions</a>
+        &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
+        &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+      </div>
+      <nav class="rainbowBackText">
+        Outline:
+        <a class="choices active" id="0">blank</a>
+        <a class="choices" id="1">1</a>
+        <a class="choices" id="2">2</a>
+        <a class="choices" id="3">3</a>
+        <a class="choices" id="4">4</a>
+        <a class="choices" id="5">5</a>
+        <a class="choices" id="6">6</a>
+      </nav>
+    </header>
+    <section id="shapeTray">
+        <div class="shape tri sm purple"></div>
+        <div class="shape tri sm pink" ></div> 
+        <div class="shape square red"></div>
+        <div class="shape par orange"></div>
+        <div class="shape tri md yellow"></div>
+        <div class="shape tri lg green"></div>
+        <div class="shape tri lg blue"></div>
+    </section>
+    <main id="matchSpace">
+        <div id="directText">
+        <p>The object of the puzzle is to fit all of the shape pieces
+        into the outlined area such that no piece overlaps another or is outside of the outline.  
+        </p>
+        <p>Choose an outline by clicking a number on the left. Choose no outline by clicking "blank."
+        </p>
+        <p>To move the shapes, click and drag the shape pieces with your mouse. 
+        </p>
+        <p>Use the left and right arrow keys to rotate the selected shape. Use the up arrow key to flip the selected shape.
+        </p>
+        <p>Press the spacebar to change the shape to a randomly selected color.
+        </p>
+        </div>
+        <div id="blank" class="templates"></div>
+        <div id="one" class="templates"></div>
+        <div id="two" class="templates"></div>
+        <div id="three" class="templates"></div>
+        <div id="four" class="templates"></div>
+        <div id="five" class="templates"></div>
+        <div id="six" class="templates"></div>
+      </main>
+    </body>
+</html>
