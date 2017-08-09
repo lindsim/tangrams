@@ -1,27 +1,27 @@
 $(function () {
 
-  var currentTemplate = $("#blank");
-  var currentChoice = $("#0");
-  var convert = ["blank", "one", "two", "three", "four", "five", "six"];
+    var currentTemplate = $("#blank");
+    var currentChoice = $("#0");
+    var convert = ["blank", "one", "two", "three", "four", "five", "six"];
 
-  $(document).ready(function (){
+  $(document).ready(function () {
     $("#directText").hide();
     $(".templates").hide();
-    currentTemplate.show();
-  })
+        currentTemplate.show();
+    });
 
-  $("#directLink").hover(function (){
+  $("#directLink").hover(function () {
     $("#directText").show();
-  }, function (){
+    }, function () {
     $("#directText").hide();
-  })
+    });
 
   $(".choices").click(function () {
-    currentTemplate.hide();
-    currentChoice.removeClass("active");
-    currentTemplate = $("#" + convert[($(this).attr("id")).toString()]);
-    currentChoice = $(this);
+        currentTemplate.hide();
+        currentChoice.removeClass("active");
+        currentTemplate = $("#" + convert[($(this).attr("id")).toString()]);
+        currentChoice = $(this);
     $(this).addClass("active");
-    currentTemplate.show();
-  })
-})
+        currentTemplate.show();
+    });
+});
