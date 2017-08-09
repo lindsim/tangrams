@@ -25,14 +25,14 @@
   position: absolute;
 }
 
-#directText{
+#directText {
   margin: auto;
-  background: #ffffff;
+  background-color: #ffffff;
   padding: 1em;
   font-family: 'Oswald', sans-serif;
   font-size: 0.9em;
   border: 0.15em solid #000000;
-  z-index: 4 !important;
+  z-index: 4;
   position: absolute;
 }
 
@@ -59,16 +59,17 @@ body {
 nav {
   font-size: 1em;
 }
+
 ul {
-  padding: 0em;
-  margin: 0em;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   letter-spacing: 0.1em;
   font-size: 6.5em;
-  margin: 0em;
-  padding: 0em;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -80,7 +81,7 @@ a {
 
 a:hover {
   color: #000000;
-  text-shadow: 0em 0em 1em #fc69b4;
+  text-shadow: 0 0 1em #fc69b4;
 }
 
 
@@ -107,7 +108,7 @@ a:hover {
 }
 
 .choices {
-  padding: 0em 0.1em 0em 0.1em;
+  padding: 0 0.1em 0 0.1em;
   text-decoration: none;
 }
 
@@ -120,7 +121,7 @@ a:hover {
 }
 
 .active {
-  border: 0.1em dashed black;
+  border: 0.1em dashed #000000;
   border-radius: 0.4em;
   text-shadow: none;
 }
@@ -130,7 +131,7 @@ a:hover {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0.07em 0em 0em #000000;
+  text-shadow: 0.07em 0 0 #000000;
 }
 
 
@@ -139,30 +140,27 @@ a:hover {
 /* shape classes */
 
 .tri {
-   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
 }
 
 .square {
   width: 5.6em; 
   height: 5.6em;
   margin-top: 0.25em; 
-  }
+}
 
 .par {
-	width: 11.2em;
-	height: 5.6em;
-  
-  
+  width: 11.2em;
+  height: 5.6em;
   margin-top: 0.25em;
 }
 
-.clip0{
+.clip0 {
   clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
 }
 
-.clip1
-{
-  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%)
+.clip1 {
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
 }
 
 .lg {
@@ -207,94 +205,102 @@ a:hover {
 }
 
 .red {
-  background: #f53f00;
+  background-color: #f53f00;
 }
 
 .orange {
-  background: #ff7518;
+  background-color: #ff7518;
 }
 
 .blue {
-  background: #2d61a6;
+  background-color: #2d61a6;
 }
 
 .green {
-  background: #4ed9b1;
+  background-color: #4ed9b1;
 }
 
 .purple {
-  background: #592da6;
+  background-color: #592da6;
 }
 
 .pink {
-  background: #fc69b4;  
+  background-color: #fc69b4;  
 }
 
 .yellow {
-  background: #ffe135;
+  background-color: #ffe135;
 }
 
 .black {
-  background: #000000;
+  background-color: #000000;
 }
 
 
 /* transform */
  
  .rotate0 {
-    -webkit-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-      -ms-transform:rotate(0deg);
-	     -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
     
 .rotate45 {
-    -webkit-transform: rotate(45deg);
-	  -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-	     -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .rotate90 {
-    -webkit-transform: rotate(90deg);
-	  -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .rotate135 {
-    -webkit-transform: rotate(135deg);
-	  -moz-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-	     -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .rotate180 {
-    -webkit-transform: rotate(180deg);
-	  -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-	     -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .rotate225 {
-   -webkit-transform: rotate(225deg);
-	  -moz-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-	     -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
     
 .rotate270 {
-    -webkit-transform: rotate(270deg);
-	  -moz-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-	     -o-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .rotate315 {
-    -webkit-transform: rotate(315deg);
-	  -moz-transform: rotate(315deg);
-      -ms-transform: rotate(3150deg);
-	     -o-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 
