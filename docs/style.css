@@ -329,7 +329,7 @@ a:hover {
   transform-origin: 0 100%;
 }
 
-#three:after {
+#three::after {
   content: "";
   width: 31.9em;
   border-top: 0.2em dashed #000000;
@@ -351,7 +351,7 @@ a:hover {
 }
 	
 
-#four:after {
+#four::after {
   content: "";
   width: 16em;
   height: 16em;
@@ -372,7 +372,7 @@ a:hover {
   background: transparent;
 }
 
-#five:after {
+#five::after {
   content: "";
   border-bottom: 0.2em dashed #000000;
   border-right: 0.2em dashed #000000;
@@ -384,7 +384,7 @@ a:hover {
   transform: rotate(45deg);
 }
 
-#five:before {
+#five::before {
   content: "";
   margin-top: 3.5em;
   margin-left: 9.8em;
@@ -406,7 +406,7 @@ a:hover {
   background: transparent;
 }
 
-#six:before {
+#six::before {
   content: "";
   border-bottom: 0.2em dashed #000000;
   border-right: 0.2em dashed #000000;
@@ -418,7 +418,7 @@ a:hover {
   margin-top: 5.8em;
 }
 	
-#six:after {
+#six::after {
   content: "";
   border-top: 0.2em dashed #000000;
   border-bottom: 0.2em dashed #000000;
