@@ -27,7 +27,7 @@
 
 #directText{
   margin: auto;
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 1em;
   font-family: 'Oswald', sans-serif;
   font-size: 0.9em;
@@ -165,10 +165,6 @@ a:hover {
   clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%)
 }
 
-
-
-
-
 .lg {
   width: 16em;
   height: 16em;
@@ -211,35 +207,35 @@ a:hover {
 }
 
 .red {
-  background-color: #f53f00;
+  background: #f53f00;
 }
 
 .orange {
-	background: #ff7518;
+  background: #ff7518;
 }
 
 .blue {
-	background-color: #2d61a6;
+  background: #2d61a6;
 }
 
 .green {
-  background-color:#4ed9b1;
+  background: #4ed9b1;
 }
 
 .purple {
-	background-color: #592da6;
+  background: #592da6;
 }
 
 .pink {
-  background-color: #fc69b4;  
+  background: #fc69b4;  
 }
 
 .yellow {
-  background-color: #ffe135;
+  background: #ffe135;
 }
 
 .black {
-  background-color: #000000;
+  background: #000000;
 }
 
 
@@ -339,11 +335,11 @@ a:hover {
 
 #four {
   margin-top: 15em;
-	border-bottom: 0.2em dashed #000000;
-	border-left: 0.2em dashed #000000;
-	border-right: 0.2em dashed #000000;
-	height: 5.6em;
-	width: 22.6em;
+  border-bottom: 0.2em dashed #000000;
+  border-left: 0.2em dashed #000000;
+  border-right: 0.2em dashed #000000;
+  height: 5.6em;
+  width: 22.6em;
   position: relative;
   background: transparent;
 }
@@ -363,9 +359,9 @@ a:hover {
 
 #five {
   border-left: 0.2em dashed #000000;
-	border-right: 0.2em dashed #000000;
-	height: 11.2em;
-	width: 22.6em;
+  border-right: 0.2em dashed #000000;
+  height: 11.2em;
+  width: 22.6em;
   position: relative;
   background: transparent;
 }
@@ -373,9 +369,9 @@ a:hover {
 #five:after {
   content: "";
   border-bottom: 0.2em dashed #000000;
-	border-right: 0.2em dashed #000000;
-	height: 16em;
-	width: 16em;
+  border-right: 0.2em dashed #000000;
+  height: 16em;
+  width: 16em;
   position: absolute;
   background: transparent;
   transform-origin: 19.5em 8em;
@@ -387,9 +383,9 @@ a:hover {
   margin-top: 3.5em;
   margin-left: 9.8em;
   border-bottom: 0.2em dashed #000000;
-	border-right: 0.2em dashed #000000;
-	height: 16em;
-	width: 16em;
+  border-right: 0.2em dashed #000000;
+  height: 16em;
+  width: 16em;
   position: absolute;
   background: transparent;
   transform-origin: 5em 0em;
@@ -398,18 +394,18 @@ a:hover {
 
 #six {
   border-top: 0.2em dashed #000000;
-	border-left: 0.2em dashed #000000;
-	height: 11.2em;
-	width: 11.2em;
+  border-left: 0.2em dashed #000000;
+  height: 11.2em;
+  width: 11.2em;
   background: transparent;
 }
 
 #six:before {
   content: "";
-	border-bottom: 0.2em dashed #000000;
+  border-bottom: 0.2em dashed #000000;
   border-right: 0.2em dashed #000000;
-	height: 11.2em;
-	width: 11.2em;
+  height: 11.2em;
+  width: 11.2em;
   position: absolute;
   background: transparent;
   margin-left: 5.8em;
@@ -420,8 +416,8 @@ a:hover {
   content: "";
   border-top: 0.2em dashed #000000;
   border-bottom: 0.2em dashed #000000;
-	height: 16em;
-	width: 7.7em;
+  height: 16em;
+  width: 7.7em;
   position: absolute;
   background: transparent;
   transform: rotate(45deg);
