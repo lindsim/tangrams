@@ -1,10 +1,10 @@
 /* transform */
  /* mixins */
 @mixin transformR($num) {
-	-webkit-transform: rotate($num);
-	   -moz-transform: rotate($num);
-       -ms-transform: rotate($num);
-	       -o-transform: rotate($num);
+  -webkit-transform: rotate($num);
+  -moz-transform: rotate($num);
+  -ms-transform: rotate($num);
+  -o-transform: rotate($num);
 }
 
 

@@ -16,21 +16,20 @@
 
 //type
 .par {
-	width: 2 * $sqside;
-	height: $sqside;
-    clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
-    margin-top: 0.25em;
+  width: 2 * $sqside;
+  height: $sqside;
+  clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+  margin-top: 0.25em;
 }
 
 .square {
-    width: $sqside;
-    height: $sqside;
-    margin-top: 0.25em;
-
+  width: $sqside;
+  height: $sqside;
+  margin-top: 0.25em;
 }
 
 .tri {
-   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
 }
 
 //size for triangles
@@ -60,19 +59,19 @@
 }
 
 .orange {
-	background: $orange;
+  background-color: $orange;
 }
 
 .blue {
-	background-color: $blue;
+  background-color: $blue;
 }
 
 .green {
-background-color: $green;
+  background-color: $green;
 }
 
 .purple {
-	background-color: $purple;
+  background-color: $purple;
 }
 
 .pink {
@@ -87,37 +86,37 @@ background-color: $green;
 /* shape divs */
 
 #square {
-    margin-left: $trihyp - ($medTri * 2);
-    background-color: $red;
+  margin-left: $trihyp - ($medTri * 2);
+  background-color: $red;
 }
 
 #par {
-	background: $orange;
-    margin-left: 4.5em;
+  background-color: $orange;
+  margin-left: 4.5em;
 }
 
 #lgtri {
-    border-bottom: $lgTri solid $blue;
-    margin-left: 1em;
-    background-clip:border;
+  border-bottom: $lgTri solid $blue;
+  margin-left: 1em;
+  background-clip:border;
 }
 
 #lgtri2 {
-    border-bottom: $lgTri solid $green;
-    margin-left: 1em;
+  border-bottom: $lgTri solid $green;
+  margin-left: 1em;
 }
 
 #smtri {
-	border-bottom: $smTri solid $purple;
-    margin-left: 4em;
+  border-bottom: $smTri solid $purple;
+  margin-left: 4em;
 }
 
 #smtri2 {
-    border-bottom: $smTri solid $pink;  
-    margin-left: 4em; 
+  border-bottom: $smTri solid $pink;  
+  margin-left: 4em; 
 }
 
 #mdtri {
-	border-bottom: $medTri solid $yellow;
-    margin-left: 2.6em;
+  border-bottom: $medTri solid $yellow;
+  margin-left: 2.6em;
 }
