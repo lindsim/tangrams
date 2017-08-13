@@ -1,27 +1,20 @@
-$(function () {
+$(function() {
 
-    var currentTemplate = $("#blank");
-    var currentChoice = $("#0");
-    var convert = ["blank", "one", "two", "three", "four", "five", "six"];
+  var currentTemplate = $("#three");
+  var currentChoice = $("#3");
+  var convert = ["blank", "one", "two", "three", "four", "five", "six"];
 
-  $(document).ready(function () {
-    $("#directText").hide();
+  $(document).ready(function(){
     $(".templates").hide();
-        currentTemplate.show();
-    });
+    currentTemplate.show();
+  })
 
-  $("#directLink").hover(function () {
-    $("#directText").show();
-    }, function () {
-    $("#directText").hide();
-    });
-
-  $(".choices").click(function () {
-        currentTemplate.hide();
-        currentChoice.removeClass("active");
-        currentTemplate = $("#" + convert[($(this).attr("id")).toString()]);
-        currentChoice = $(this);
+  $(".choices").click(function() {
+    currentTemplate.hide();
+    currentChoice.removeClass("active");
+    currentTemplate = $("#" + convert[($(this).attr("id")).toString()]);
+    currentChoice = $(this);
     $(this).addClass("active");
-        currentTemplate.show();
-    });
-});
+    currentTemplate.show();
+  })
+})
