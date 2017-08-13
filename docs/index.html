@@ -12,21 +12,30 @@
   <body>
     <header>
       <h1 class="rainbowBackText">Tangram</h1> 
+      
       <div id="links">
-        &#8594; <a id="directLink" class="rainbowBackText" href="#">Directions</a>
         &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
         &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
       </div>
       <nav class="rainbowBackText">
         Outline:
-        <a class="choices active" id="0">blank</a>
+        <a class="choices" id="0">blank</a>
         <a class="choices" id="1">1</a>
         <a class="choices" id="2">2</a>
-        <a class="choices" id="3">3</a>
+        <a class="choices active" id="3">3</a>
         <a class="choices" id="4">4</a>
         <a class="choices" id="5">5</a>
         <a class="choices" id="6">6</a>
       </nav>
+      <div id ="info"> 
+        Fit all shapes in the outline. &nbsp; &nbsp;
+        &#8592; turn left &nbsp;    
+        &#8594; turn right &nbsp;    
+        &#8593; flip &nbsp;&nbsp;
+        mouse: move & select &nbsp; &nbsp;   
+        space: change color
+        
+      </div>
     </header>
     <section id="shapeTray">
         <div class="shape tri sm purple"></div>
@@ -38,20 +47,6 @@
         <div class="shape tri lg blue"></div>
     </section>
     <main id="matchSpace">
-        <div id="directText">
-        <p>The object of the puzzle is to fit all of the shape pieces
-        into the outlined area such that no piece overlaps another or is outside of the outline.  
-        </p>
-        <p>Choose an outline by clicking a number on the left. Choose no outline by clicking "blank."
-        </p>
-        <p>To move the shapes, click and drag the shape pieces with your mouse. 
-        </p>
-        <p>Use the left and right arrow keys to rotate the selected shape. Use the up arrow key to flip the selected shape.
-        </p>
-        <p>Press the spacebar to change the shape to a randomly selected color.
-        </p>
-        <p>Note: this site works with Firefox and Chrome; it does not work with IE or Safari. 
-        </div>
         <div id="blank" class="templates"></div>
         <div id="one" class="templates"></div>
         <div id="two" class="templates"></div>

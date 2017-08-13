@@ -1,19 +1,12 @@
 $(function() {
 
-  var currentTemplate = $("#blank");
-  var currentChoice = $("#0");
+  var currentTemplate = $("#three");
+  var currentChoice = $("#3");
   var convert = ["blank", "one", "two", "three", "four", "five", "six"];
 
   $(document).ready(function(){
-    $("#directText").hide();
     $(".templates").hide();
     currentTemplate.show();
-  })
-
-  $("#directLink").hover(function(){
-    $("#directText").show();
-  }, function(){
-    $("#directText").hide();
   })
 
   $(".choices").click(function() {
