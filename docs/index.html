@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tangram</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="manipulation.js"></script>
+    <script type="text/javascript" src="display.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="rainbowBackText">Tangram</h1> 
+      <div id="links">
+        &#8594; <a class="rainbowBackText" href="https://github.com/lindsim/tangrams">Code</a>
+        &#8594; <a class="rainbowBackText" href="https://en.wikipedia.org/wiki/Tangram">Tangram info</a> 
+      </div>
+      <nav class="rainbowBackText">
+        Outline:
+        <a class="choices" id="1">1</a>
+        <a class="choices" id="2">2</a>
+        <a class="choices" id="3">3</a>
+        <a class="choices" id="4">4</a>
+        <a class="choices" id="5">5</a>
+        <a class="choices" id="6">6</a>
+        <a class="choices" id="0">none</a>
+      </nav>
+      <div id ="info"> 
+        Fit all the shapes into the outline. &nbsp; &nbsp; Move and select shapes with the mouse. <br>
+        &#8592; rotate shape left &nbsp; &nbsp; 
+        &#8594; rotate shape right &nbsp; &nbsp; 
+        &#8593; flip shape &nbsp; &nbsp; 
+        spacebar: change shape color &nbsp; &nbsp; 
+      </div>
+    </header>
+    <section id="shapeTray">
+        <div class="shape tri sm purple"></div>
+        <div class="shape tri sm pink" ></div> 
+        <div class="shape square red"></div>
+        <div class="shape par orange clip0 rotate0"></div>
+        <div class="shape tri md yellow"></div>
+        <div class="shape tri lg green"></div>
+        <div class="shape tri lg blue"></div>
+    </section>
+    <main id="outlineSpace">
+        <div id="blank" class="outlines"></div>
+        <div id="one" class="outlines"></div>
+        <div id="two" class="outlines"></div>
+        <div id="three" class="outlines"></div>
+        <div id="four" class="outlines"></div>
+        <div id="five" class="outlines"></div>
+        <div id="six" class="outlines"></div>
+    </main>
+  </body>
+</html>
