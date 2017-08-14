@@ -146,13 +146,8 @@ a:hover {
 }
 
 .par {
-<<<<<<< HEAD
 	width: 11.2em;
-	height: 5.6em;
-=======
-  width: 11.2em;
   height: 5.6em;
->>>>>>> 24f69494fbc68295702982da8cbc3d0fbaa5f566
   margin-top: 0.25em;
 }
 
@@ -161,11 +156,7 @@ a:hover {
 }
 
 .clip1 {
-<<<<<<< HEAD
   clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%)
-=======
-  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
->>>>>>> 24f69494fbc68295702982da8cbc3d0fbaa5f566
 }
 
 .lg {
@@ -352,12 +343,7 @@ a:hover {
   background: transparent;
 }
 	
-<<<<<<< HEAD
-#four:after {
-=======
-
 #four::after {
->>>>>>> 24f69494fbc68295702982da8cbc3d0fbaa5f566
   content: "";
   width: 16em;
   height: 16em;
