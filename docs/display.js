@@ -19,10 +19,9 @@ $(function() {
     $currentChoice.addClass("active");
   }
 
+  $(document).ready(changeCurrentClass($("#3")));
 
   $choices.click(function() {
     removeCurrentClass($(this));
   });
-    $(document).ready(changeCurrentClass($("#3")));
-
 })
