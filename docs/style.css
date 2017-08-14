@@ -27,15 +27,13 @@
 
 #info{
   margin: auto;
-  background-color: #ffffff;
+  background-color: transparent;
   font-family: 'Oswald', sans-serif;
   font-size: 0.8em;
   position: absolute;
 }
 
-
 /* other elements */ 
-
 
 header {
   z-index: 1;
@@ -55,7 +53,9 @@ body {
 
 nav {
   font-size: 1em;
+  padding-bottom: 0.3em;
 }
+
 ul {
   padding: 0em;
   margin: 0em;
@@ -68,7 +68,6 @@ h1 {
   padding: 0em;
 }
 
-
 /* links */
 
 a {
@@ -80,21 +79,25 @@ a:hover {
   text-shadow: 0em 0em 1em #fc69b4;
 }
 
-
 /* classes */
 
-.templates{
+.outlines {
+  display: none;
+}
+
+.showing {
   margin-top: 5em;
   margin-right: auto;
   margin-left: auto;
+  display: inherit;
 }
 
-.centerContent{
+.centerContent {
   position: relative;
   left: -50%;
 }
 
-.centerWrap{
+.centerWrap {
    position: absolute;
    left: 50%;
 }
@@ -130,9 +133,6 @@ a:hover {
   text-shadow: 0.07em 0em 0em #000000;
 }
 
-
-
-
 /* shape classes */
 
 .tri {
@@ -148,8 +148,6 @@ a:hover {
 .par {
 	width: 11.2em;
 	height: 5.6em;
-  
-  
   margin-top: 0.25em;
 }
 
@@ -157,21 +155,15 @@ a:hover {
   clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
 }
 
-.clip1
-{
+.clip1 {
   clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%)
 }
-
-
-
-
 
 .lg {
   width: 16em;
   height: 16em;
   margin-top: -7.75em;
 }
-
 
 .sm {
   width: 8em;
@@ -239,7 +231,6 @@ a:hover {
   background-color: #000000;
 }
 
-
 /* transform */
  
  .rotate0 {
@@ -298,7 +289,6 @@ a:hover {
 	     -o-transform: rotate(315deg);
 }
 
-
 /* template/matching divs */
 
 #one {
@@ -345,7 +335,6 @@ a:hover {
   background: transparent;
 }
 	
-
 #four:after {
   content: "";
   width: 16em;
@@ -424,4 +413,3 @@ a:hover {
   transform: rotate(45deg);
   transform-origin: 6em 14em;
 }
-
