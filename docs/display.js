@@ -11,13 +11,14 @@ $(function() {
     $currentOutline.removeClass("showing"); 
     $currentChoice.removeClass("active");
     changeCurrentClass($selected);
-  }
+  };
+  
   var changeCurrentClass = function($selected){
     $currentOutline = $("#" + convert[($selected.attr("id")).toString()]);
     $currentChoice = $selected;
     $currentOutline.addClass("showing");
     $currentChoice.addClass("active");
-  }
+  };
 
   $(document).ready(changeCurrentClass($("#3")));
 
