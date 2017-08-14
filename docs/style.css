@@ -9,7 +9,7 @@
   float: right;
 }
 
-#matchSpace {
+#outlineSpace {
   display: inline-block;
   top: 10em;
   position: absolute;
@@ -27,15 +27,13 @@
 
 #info{
   margin: auto;
-  background-color: #ffffff;
+  background-color: transparent;
   font-family: 'Oswald', sans-serif;
   font-size: 0.8em;
   position: absolute;
 }
 
-
 /* other elements */ 
-
 
 header {
   z-index: 1;
@@ -55,6 +53,7 @@ body {
 
 nav {
   font-size: 1em;
+  padding-bottom: 0.3em;
 }
 
 ul {
@@ -69,7 +68,6 @@ h1 {
   padding: 0;
 }
 
-
 /* links */
 
 a {
@@ -81,21 +79,25 @@ a:hover {
   text-shadow: 0 0 1em #fc69b4;
 }
 
-
 /* classes */
 
-.templates{
+.outlines {
+  display: none;
+}
+
+.showing {
   margin-top: 5em;
   margin-right: auto;
   margin-left: auto;
+  display: inherit;
 }
 
-.centerContent{
+.centerContent {
   position: relative;
   left: -50%;
 }
 
-.centerWrap{
+.centerWrap {
    position: absolute;
    left: 50%;
 }
@@ -131,9 +133,6 @@ a:hover {
   text-shadow: 0.07em 0 0 #000000;
 }
 
-
-
-
 /* shape classes */
 
 .tri {
@@ -147,7 +146,7 @@ a:hover {
 }
 
 .par {
-  width: 11.2em;
+	width: 11.2em;
   height: 5.6em;
   margin-top: 0.25em;
 }
@@ -157,7 +156,7 @@ a:hover {
 }
 
 .clip1 {
-  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%)
 }
 
 .lg {
@@ -165,7 +164,6 @@ a:hover {
   height: 16em;
   margin-top: -7.75em;
 }
-
 
 .sm {
   width: 8em;
@@ -233,7 +231,6 @@ a:hover {
   background-color: #000000;
 }
 
-
 /* transform */
  
  .rotate0 {
@@ -300,7 +297,6 @@ a:hover {
   transform: rotate(315deg);
 }
 
-
 /* template/matching divs */
 
 #one {
@@ -347,7 +343,6 @@ a:hover {
   background: transparent;
 }
 	
-
 #four::after {
   content: "";
   width: 16em;
@@ -426,4 +421,3 @@ a:hover {
   transform: rotate(45deg);
   transform-origin: 6em 14em;
 }
-
