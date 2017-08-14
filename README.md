@@ -1,5 +1,5 @@
 
-<a href="https://lindsim.github.io/tangrams">Play this puzzle game here!</a>
+<a href="https://lindsim.github.io/tangrams">Play this puzzle game here!</a><br>
 Note: 
 <br>
 I made a tangram puzzle to get better at CSS/Sass and Javascript/Jquery, and because I've been wanting to make this for a while. I intentionally limited myself to these technologies and HTML. 
