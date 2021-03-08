@@ -11,8 +11,8 @@ To do:
   <br><s>make navigation to choose template</s>
   <br><s>refactor the movement code so it is more natural (and uses arrow keys only)</s>
   <br><s>add some fun thngs</s>
-  <br>refactor js code one more time
-  <br>get a code review from someone
+  <br><s>refactor js code one more time</s>
+  <br><s>get a code review from someone</s> THANKS JOEY!
 <br>
 <br>
 Maybe one day:
